@@ -1,0 +1,43 @@
+div {
+    width: 200px;
+    height: 300px;
+    border: 1px solid black;
+    position: absolute;
+}
+
+div:hover {
+    z-index: 6;
+}
+
+.one {
+    background-color: yellow;
+    z-index: 1;
+}
+
+.two {
+    background-color: pink;
+    top: 50px;
+    left: 50px;
+    z-index: 2;
+}
+
+.three {
+    background-color: orange;
+    top: 100px;
+    left: 100px;
+    z-index: 3;
+}
+
+.four {
+    background-color: red;
+    top: 150px;
+    left: 150px;
+    z-index: 4;
+}
+
+.five {
+    background-color: green;
+    top: 200px;
+    left: 200px;
+    z-index: 5;
+}
