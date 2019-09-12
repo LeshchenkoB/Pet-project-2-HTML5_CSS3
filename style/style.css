@@ -3,23 +3,27 @@ body {
     font-family: Arial, sans-serif;
 }
 
+main,
+.container,
+.main-header,
+.about:after {
+    content: '';
+    width: 100%;
+    display: table;
+    clear: both;
+}
+
 .container {
-    width: 1180px;
+    width: 1280px;
     margin: 0 auto;
 }
+
 
 .main-header {
     width: 100%;
     padding: 50px;
     box-sizing: border-box;
     background-color: #4a5261;
-}
-
-.main-header:after {
-    content: "";
-    width: 100%;
-    display: table;
-    clear: both;
 }
 
 .main-header-wrp {
@@ -69,4 +73,34 @@ body {
     float: right;
     width: 470px;
     height: 215px;
+}
+
+.about {
+    width: 100%;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+.about-wrp {
+    width: 650px;
+    float: left;
+    color: #4a5261;
+}
+
+.about-title {
+    font-size: 30px;
+    line-height: 1.2;
+    text-align: left;
+}
+
+.about-wrp p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.video-about {
+    width: 430px;
+    height: 245px;
+    float: right;
+    background-color: #4a5261;
 }
