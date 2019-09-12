@@ -1,0 +1,26 @@
+@import url(header.css);
+@import url(about.css);
+@import url(dignity.css);
+@import url(scrinshots.css);
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+main,
+.container,
+.main-header,
+.about,
+.dignity,
+.scrinshots:after {
+    content: '';
+    width: 100%;
+    display: table;
+    clear: both;
+}
+
+.container {
+    width: 1280px;
+    margin: 0 auto;
+}
