@@ -3,6 +3,7 @@
 @import url(dignity.css);
 @import url(scrinshots.css);
 @import url(reviews.css);
+@import url(buy.css);
 
 body {
     margin: 0;
@@ -14,8 +15,7 @@ main,
 .main-header,
 .about,
 .dignity,
-.scrinshots,
-reviews:after {
+.scrinshots:after {
     content: '';
     width: 100%;
     display: table;
