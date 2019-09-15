@@ -14,7 +14,8 @@ main,
 .main-header,
 .about,
 .dignity,
-.scrinshots:after {
+.scrinshots,
+reviews:after {
     content: '';
     width: 100%;
     display: table;
