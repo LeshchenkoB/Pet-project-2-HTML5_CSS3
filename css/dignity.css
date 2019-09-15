@@ -23,26 +23,20 @@
     line-height: 1.5;
 }
 
-.dignity-box summary {
+.dignity-item-title {
     margin: 0 0 25px 0;
     outline: none;
+    display: block;
 }
 
-summary::-webkit-details-marker {
+.dignity-item-title::-webkit-details-marker {
     display: none;
 }
 
-details summary:after {
-    content: 'Lorem ipsum dolor sit amet.';
-}
-
-details[open] summary:after {
-    content: '';
-}
-
-summary:before {
-    background: #4a5261;
+.dignity-item-title:before {
     content: "+";
+    display: block;
+    background-color: #4a5261;
     width: 32px;
     height: 32px;
     margin-right: 10px;
@@ -51,17 +45,29 @@ summary:before {
     font-size: 1.5em;
     font-weight: bold;
     text-align: center;
+    line-height: 32px;
 }
 
-details[open] summary:before {
+.dignity-item p {
+    margin: 0 0 25px 0;
+}
+
+.dignity-item:last-child > p {
+    margin-bottom: 0;
+}
+
+.dignity-item:last-child > .dignity-item-title {
+    margin-bottom: 0;
+}
+
+.dignity-item[open] .dignity-item-title {
+    margin: 0 0 10px 0;
+}
+
+.dignity-item[open] .dignity-item-title:before {
     content: "-";
 }
 
-.dignity-box p {
-    margin: 0 0 35px 0;
-    padding: 0 0 0 40px;
-}
-
-.dignity-box > details:last-child > p {
+dignity-item:last-child > dignity-item-title {
     margin-bottom: 0;
 }
