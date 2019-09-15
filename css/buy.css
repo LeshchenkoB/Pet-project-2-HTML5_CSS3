@@ -73,11 +73,10 @@
 .buy-button:hover {
     color: #ffffff;
     background-color: #ccc;
-/*    outline: none;*/
+    cursor: pointer;
 }
 
 .buy-button:active {
     color: #4a5261;
     background-color: #ffffff;
-/*    outline: none;*/
 }

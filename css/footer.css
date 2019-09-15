@@ -1,0 +1,178 @@
+.contacts {
+    width: 100%;
+    padding: 50px;
+    box-sizing: border-box;
+    background-color: #4a5261;
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contacts-title {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    line-height: 1.2;
+    color: #ffffff;
+    margin: 0 0 30px 0;
+}
+
+.contacts form {
+    width: 500px;
+    margin: 0 45px 0 0;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    -ms-align-items: center;
+    align-items: center;
+}
+
+.contacts form > input,
+.contacts form > textarea {
+    width: 100%;
+    margin: 0 0 20px 0;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    height: 40px;
+    background-color: #ffffff;
+    font-family: Arial;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #495261;
+    border: none;
+    outline: none;
+}
+
+.contacts form > input {
+    height: 40px;
+}
+
+.send-button {
+    width: 140px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.5;
+    color: #495261;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+}
+
+.contacts form > textarea {
+    height: 170px;
+}
+
+.contact-box {
+    width: 240px;
+}
+
+.contact-box-item {
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #ffffff;
+    line-height: 40px;
+    padding: 0 0 0 30px;
+    box-sizing: border-box;
+    position: relative;
+}
+.phone-icon {
+    margin: 0 0 30px 0;
+}
+
+.skype-icon::before {
+    content: "";
+    display: block;
+    width: 25px;
+    height: 25px;
+    top: 7px;
+    left: 0;
+    background-image: url(../img/skype-icon.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+.icq-icon::before {
+    content: "";
+    display: block;
+    width: 25px;
+    height: 25px;
+    top: 7px;
+    left: 0;
+    background-image: url(../img/icq-icon.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+.email-icon::before {
+    content: "";
+    display: block;
+    width: 25px;
+    height: 25px;
+    top: 7px;
+    left: 0;
+    background-image: url(../img/email-icon.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+.phone-icon::before {
+    content: "";
+    display: block;
+    width: 25px;
+    height: 25px;
+    top: 7px;
+    left: 0;
+    background-image: url(../img/phone-icon.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+
+}
+
+.contact-social {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.fab {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #ffffff;
+    color: #495261;
+    border-radius: 50%;
+}
+
+.fab:hover{
+    background-color: #ccc;
+    color: #ffffff;
+}
+.fab:active{
+    background-color: #ffffff;
+    color: #495261;
+}
+.copyright {
+    text-align: center;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.3px;
+    color: #495261;
+}
