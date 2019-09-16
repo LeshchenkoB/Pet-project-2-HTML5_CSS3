@@ -50,13 +50,33 @@
     outline: none;
 }
 
-.contacts form > input {
-    height: 40px;
+.contacts form > input[type="text"] {
+    text-transform: capitalize;
+}
+
+.contacts form > input:focus {
+    background-color: #ccc;
+    color: #4a5261;
+}
+
+.contacts form > input:hover {
+    background-color: #ccc;
+    color: #4a5261;
+}
+
+.contacts form > textarea:hover {
+    background-color: #ccc;
+    color: #4a5261;
+}
+
+.contacts form > textarea:focus {
+    background-color: #ccc;
+    color: #4a5261;
 }
 
 .send-button {
     width: 140px;
-    height: 40px;
+    padding: 7px 0;
     border-radius: 5px;
     background-color: #ffffff;
     font-size: 16px;
@@ -66,6 +86,17 @@
     text-transform: uppercase;
     border: none;
     outline: none;
+}
+
+.send-button:hover {
+    color: #ffffff;
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+.send-button:active {
+    color: #4a5261;
+    background-color: #ffffff;
 }
 
 .contacts form > textarea {
@@ -87,6 +118,7 @@
     box-sizing: border-box;
     position: relative;
 }
+
 .phone-icon {
     margin: 0 0 30px 0;
 }
@@ -146,6 +178,10 @@
 
 .contact-social {
     display: flex;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -o-flex-direction: row;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -161,18 +197,21 @@
     border-radius: 50%;
 }
 
-.fab:hover{
+.fab:hover {
     background-color: #ccc;
     color: #ffffff;
 }
-.fab:active{
+
+.fab:active {
     background-color: #ffffff;
     color: #495261;
 }
+
 .copyright {
     text-align: center;
     font-size: 12px;
     line-height: 2;
     letter-spacing: 0.3px;
     color: #495261;
+    padding: 5px 0;
 }

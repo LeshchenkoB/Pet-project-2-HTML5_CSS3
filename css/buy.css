@@ -4,9 +4,14 @@
     box-sizing: border-box;
     color: #4a5261;
     display: flex;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -o-flex-direction: row;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+    -ms-align-items: flex-end;
     align-items: flex-end;
 }
 
