@@ -50,6 +50,10 @@
     outline: none;
 }
 
+.contacts form > textarea{
+    resize: none;
+}
+
 .contacts form > input[type="text"] {
     text-transform: capitalize;
 }
@@ -74,7 +78,7 @@
     color: #4a5261;
 }
 
-.send-button {
+.contacts form > .send-button {
     width: 140px;
     padding: 7px 0;
     border-radius: 5px;
@@ -88,13 +92,13 @@
     outline: none;
 }
 
-.send-button:hover {
+.contacts form > .send-button:hover {
     color: #ffffff;
     background-color: #ccc;
     cursor: pointer;
 }
 
-.send-button:active {
+.contacts form > .send-button:active {
     color: #4a5261;
     background-color: #ffffff;
 }
