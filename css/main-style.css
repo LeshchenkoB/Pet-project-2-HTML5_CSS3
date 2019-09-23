@@ -1,29 +1,6 @@
-@import url(header.css);
-@import url(about.css);
-@import url(dignity.css);
-@import url(scrinshots.css);
-@import url(reviews.css);
-@import url(buy.css);
-@import url(footer.css);
-
+html,
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-}
+  margin: 0;
+  padding: 0; }
 
-main,
-.container,
-.main-header,
-.about,
-.dignity,
-.scrinshots:after {
-    content: '';
-    width: 100%;
-    display: table;
-    clear: both;
-}
-
-.container {
-    width: 1280px;
-    margin: 0 auto;
-}
+/*# sourceMappingURL=main-style.css.map */
