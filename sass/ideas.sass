@@ -1,0 +1,57 @@
+.ideas
+  @extend %padding-container
+  padding-top: 80px
+  &:after
+    content: ""
+    display: block
+    width: 100%
+    clear: both
+
+  .ideas-txt
+    display: block
+    margin: 0 0 25px 0
+    font-family: raleway, Arial, sans-serif
+    font-weight: 600
+    font-size: 30px
+    color: #555555
+    text-align: center
+
+  .idead-paragraf
+    margin: 0 0 40px 0
+    padding: 0 200px 0 200px
+    text-align: center
+    font-family: montserrat, Arial, sans-serif
+    font-size: 16px
+    font-weight: 300
+    line-height: 1.75
+    color: #8c8c8c
+
+  .ideas-slides
+    display: flex
+    min-height: 482px
+    justify-content: center
+    position: relative
+
+    .ideas-slides-left
+      position: absolute
+      z-index: 1
+      top: 81px
+      left: -30px
+      &:hover
+        z-index: 4
+        box-shadow: 0 0 10px rgba(0,0,0,0.5)
+
+    .ideas-slides-center
+      position: absolute
+      z-index: 3
+      &:hover
+        box-shadow: 0 0 10px rgba(0,0,0,0.5)
+
+    .ideas-slides-right
+      position: absolute
+      z-index: 1
+      top: 81px
+      right: -30px
+      &:hover
+        z-index: 4
+        box-shadow: 0 0 10px rgba(0,0,0,0.5)
