@@ -2,12 +2,8 @@
     @extend %padding-container
     width: 100%
     min-height: 1024px
-    //margin: 0 auto
     background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("../img/header.jpg") no-repeat center top
     background-size: cover
-    //display: flex
-    //align-items: flex-start
-    //flex-wrap: wrap
     position: relative
 
     .header-menu
@@ -108,31 +104,16 @@
                 font-family: montserrat, Arial sans-serif
                 font-weight: 300
                 font-size: 16px
-                line-height: 16px
+                line-height: 24px
                 text-align: center
 
             .header-button
-                display: flex
-                align-items: center
-                justify-content: center
+                +button
+                display: block
                 margin: 0 auto
-                width: 170px
-                height: 50px
-                background-color: #998675
-                font-family: raleway, Arial, sans-serif
-                font-weight: 800
-                font-size: 14px
-                line-height: 50px
-                color: #ffffff
-                text-transform: uppercase
-                text-decoration: none
-                border-radius: 5px
-                &:hover
-                    color: $color-hover
-                    background-color: #fff
-                &:active
-                    color: $color-active
-                    background-color: #998675
+
+                .header-button-txt
+                    +button-txt
 
         .header-pagination
             display: flex

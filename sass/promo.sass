@@ -26,26 +26,8 @@
       color: #615855
 
   .promo-button
-    width: 170px
-    height: 50px
-    border-radius: 3px
-    background-color: #998675
-    border: 0
-    outline: none
+    +button
 
     .promo-button-txt
-      font-family: raleway, Arial, sans-serif
-      font-size: 14px
-      font-weight: 800
-      line-height: 1.64
-      text-transform: uppercase
-      color: #ffffff
-    &:hover
-      background-color: #ffffff
-      cursor: pointer
-    &:hover .promo-button-txt
-      color: #998675
-    &:active
-      background-color: #998675
-    &:active .promo-button-txt
-      color: #ffffff
+      +button-txt
+
