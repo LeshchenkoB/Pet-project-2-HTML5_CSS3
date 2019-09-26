@@ -1,66 +1,184 @@
 @import "variables"
 
 .main-header
-    width: 100%
+    @extend %padding-container
+    width: 1920px
     min-height: 1024px
+    margin: 0 auto
     background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("../img/header.jpg") no-repeat center top
     background-size: cover
+    //display: flex
+    //align-items: flex-start
+    //flex-wrap: wrap
+    position: relative
 
-    .header-contain
+    .header-menu
         display: flex
-        justify-content: center
+        width: 100%
+        margin: 0 0 280px 0
+        padding-top: 40px
+        justify-content: space-between
+        align-items: center
 
-        .header-menu
+        .header-logo
             display: flex
-            width: 100%
-            margin-top: 40px
+            font-family: raleway, Arial, sans-serif
             font-size: 34px
+            font-weight: 400
             letter-spacing: -1.36px
+            line-height: 55px
+            text-decoration: none
+            color: #ffffff
             justify-content: space-between
             align-items: center
+            &:hover
+                color: $color-hover
+            &:active
+                color: $color-active
+            .icon-logos
+                display: block
+                width: 60px
+                font-size: 51px
 
-            .header-logo
+        .header-nav
+            display: flex
+
+            .header-nav-list
                 display: flex
-                width: 180px
-                line-height: 55px
-                text-decoration: none
-                color: #ffffff
-                justify-content: space-between
-                align-items: center
+                list-style-type: none
+                font-family: montserrat, Arial, sans-serif
+                font-size: 14px
+
+                .header-nav-item
+                    margin: 0 30px 0 0
+                    a
+                        color: #ffffff
+                        text-decoration: none
+                        &:hover
+                            color: $color-hover
+                        &:active
+                            color: $color-active
+
+        .header-nav-icon
+            display: flex
+            justify-content: space-between
+            align-items: center
+            color: #ffffff
+            font-size: 25px
+            .icon-icon-cart
+                margin: 0 30px 0 60px
                 &:hover
                     color: $color-hover
-                .icon-logos
-                    font-size: 51px
-                    margin: 0 15px 0 0
-            .header-nav
-                display: flex
-
-                .header-nav-list
-                    display: flex
-                    list-style-type: none
-                    font-family: Montserrat
-                    font-size: 14px
-                    font-weight: 300
-
-                    .header-nav-item
-                        margin: 0 30px 0 0
-                        a
-                            color: #ffffff
-                            text-decoration: none
-                            &:hover
-                                color: $color-hover
-
-            .header-nav-icon
-                display: flex
-                justify-content: space-between
-                align-items: center
-                color: #ffffff
-                font-size: 25px
-                .icon-icon-cart
-                    margin: 0 30px 0 60px
-                    &:hover
-                        color: $color-hover
-                        cursor: pointer
-                .icon-icon-search:hover
-                    color: $color-hover
                     cursor: pointer
+                &:active
+                    color: $color-active
+
+            .icon-icon-search:hover
+                color: $color-hover
+                cursor: pointer
+            .icon-icon-search:active
+                color: $color-active
+    .header-wrap
+        display: flex
+        justify-content: center
+        padding: 0 290px
+        position: relative
+
+        .header-text-wrap
+            color: #ffffff
+
+            .header-text-small
+                display: block
+                margin: 0 0 15px 0
+                font-family: raleway, Arial, sans-serif
+                font-weight: 500
+                font-size: 36px
+                line-height: 36px
+                text-align: center
+
+            .header-text-big
+                display: block
+                margin: 0 0 20px 0
+                font-family: raleway, Arial, sans-serif
+                font-weight: 800
+                font-size: 52px
+                line-height: 52px
+                text-align: center
+
+            .header-text
+                margin: 0 0 50px 0
+                font-family: montserrat, Arial sans-serif
+                font-weight: 300
+                font-size: 16px
+                line-height: 16px
+                text-align: center
+
+            .header-button
+                display: flex
+                align-items: center
+                justify-content: center
+                margin: 0 auto
+                width: 170px
+                height: 50px
+                background-color: #998675
+                font-family: raleway, Arial, sans-serif
+                font-weight: 800
+                font-size: 14px
+                line-height: 50px
+                color: #ffffff
+                text-transform: uppercase
+                text-decoration: none
+                border-radius: 5px
+                &:hover
+                    color: $color-hover
+                    background-color: #fff
+                &:active
+                    color: $color-active
+                    background-color: #998675
+
+        .header-pagination
+            display: flex
+            justify-content: space-between
+            align-items: center
+            position: absolute
+            width: 100px
+            height: 15px
+            margin: 0 auto
+            top: 575px
+
+            .header-pagination-link
+                width: 10px
+                height: 10px
+                border-radius: 50%
+                background-color: #cccccc
+                border: 2px solid transparent
+                &:hover
+                    border: 2px solid #cccccc
+                    background-color: transparent
+                    transform: scale(1.4)
+                &:active
+                    border: 2px solid #cccccc
+                    background-color: #cccccc
+                    transform: scale(1.4)
+
+        .header-slide-left
+            position: absolute
+            font-size: 73px
+            color: #ccc
+            top: 40%
+            left: -20%
+            &:hover
+                color: $color-hover
+            &:active
+                color: $color-active
+
+        .header-slide-right
+            position: absolute
+            font-size: 73px
+            color: #ccc
+            top: 40%
+            right: -20%
+            &:hover
+                color: $color-hover
+            &:active
+                color: $color-active
