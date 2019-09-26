@@ -1,0 +1,14 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2019 by original authors @ fontello.com</metadata>
+<defs>
+<font id="fontello2" horiz-adv-x="1000" >
+<font-face font-family="fontello2" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="link" unicode="&#xe800;" d="M904 418l-74-74-123-123c-6-7-13-13-19-18a240 240 0 0 0-237-35 232 232 0 0 0-80 53l102 102a94 94 0 0 1 133 0l78 78 118 118a94 94 0 0 1-133 133l-94-94a272 272 0 0 1-189 14l182 182c92 93 243 93 336 0 93-93 93-244 0-336z m-355 113a232 232 0 0 0 80-52l-102-102a94 94 0 0 1-133 0l-197-197a94 94 0 0 1 0-133 94 94 0 0 1 133 0l91 91c77-31 98-34 189-13l-178-180c-93-92-244-92-336 0-93 93-93 244 0 337l196 197c3 2 6 6 9 8a238 238 0 0 0 248 44z" horiz-adv-x="1000" />
+
+<glyph glyph-name="lupa" unicode="&#xe801;" d="M1018-117a66 66 0 0 0-46-19 66 66 0 0 0-47 19l-173 171a449 449 0 0 0-274-93c-246 0-447 198-447 441s201 441 447 441 448-198 448-441c0-95-31-183-83-254l175-173a64 64 0 0 0 0-92z m-540 856c-188 0-342-151-342-337s154-337 342-337a343 343 0 0 1 271 132 332 332 0 0 1 71 205c0 186-153 337-342 337z m194-272c-7-4-15-5-23-5-19 0-38 10-47 29a166 166 0 0 1-150 92c-29 0-52 23-52 52 0 29 23 52 52 52 105 0 199-58 245-151 12-26 2-57-25-69z" horiz-adv-x="1040" />
+</font>
+</defs>
+</svg>

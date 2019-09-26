@@ -1,0 +1,57 @@
+.project
+  @extend %padding-container
+  padding-top: 80px
+
+  .project-txt
+    padding: 0 205px
+    text-align: center
+
+    .project-title
+      display: block
+      margin: 0 0 15px 0
+      font-family: raleway, Arial, sans-serif
+      font-size: 30px
+      font-weight: 600
+      color: #555555
+
+    .project-paragraf
+      margin: 0 0 40px 0
+      font-family: montserrat, Arial, sans-serif
+      font-size: 16px
+      font-weight: 300
+      line-height: 1.75
+      color: #8c8c8c
+
+  .project-nav
+    margin: 0 0 40px 0
+    display: flex
+    justify-content: center
+
+    .project-list
+      display: flex
+      width: 100%
+      padding: 0 280px
+      justify-content: space-between
+      list-style-type: none
+      font-family: montserrat, Arial,sans-serif
+      font-weight: 300
+      font-size: 14px
+      line-height: 1.5
+
+      .project-item
+        border-radius: 3px
+        border: 1px solid  #ebebeb
+        &:hover
+          background-color: #998675
+        &:hover .project-link
+          color: #ffffff
+        &:active
+          background-color: #ffffff
+        &:active .project-link
+          color: #8c8c8c
+
+        .project-link
+          display: block
+          padding: 10px 20px
+          text-decoration: none
+          color: #8c8c8c

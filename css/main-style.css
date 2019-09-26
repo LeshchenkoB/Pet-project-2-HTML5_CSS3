@@ -7,6 +7,7 @@ p {
 
 ul,
 ol {
+  margin: 0;
   padding: 0;
 }
 
@@ -27,7 +28,7 @@ button {
   margin: 0 auto;
 }
 
-.main-header, .services, .ideas, .promo {
+.main-header, .services, .ideas, .promo, .project {
   padding: 0 375px 0 375px;
   box-sizing: border-box;
 }
@@ -380,18 +381,18 @@ button {
   padding-bottom: 50px;
   background-image: linear-gradient(to right, #211b19, #4e3427);
 }
-.promo .promo-text {
+.promo .promo-txt {
   font-family: raleway, Arial, sans-serif;
   font-size: 28px;
   font-weight: 400;
   line-height: 27px;
   color: #ffffff;
 }
-.promo .promo-text .promo-txt-color {
+.promo .promo-txt .promo-title-color {
   color: #c7b299;
   padding: 0 5px 0 0;
 }
-.promo .promo-text .promo-paragraf {
+.promo .promo-txt .promo-paragraf {
   padding: 10px 0 0 0;
   font-family: montserrat, Arial, sans-serif;
   font-weight: 300;
@@ -426,6 +427,68 @@ button {
 }
 .promo .promo-button:active .promo-button-txt {
   color: #ffffff;
+}
+
+.project {
+  padding-top: 80px;
+}
+.project .project-txt {
+  padding: 0 205px;
+  text-align: center;
+}
+.project .project-txt .project-title {
+  display: block;
+  margin: 0 0 15px 0;
+  font-family: raleway, Arial, sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  color: #555555;
+}
+.project .project-txt .project-paragraf {
+  margin: 0 0 40px 0;
+  font-family: montserrat, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.75;
+  color: #8c8c8c;
+}
+.project .project-nav {
+  margin: 0 0 40px 0;
+  display: flex;
+  justify-content: center;
+}
+.project .project-nav .project-list {
+  display: flex;
+  width: 100%;
+  padding: 0 280px;
+  justify-content: space-between;
+  list-style-type: none;
+  font-family: montserrat, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.project .project-nav .project-list .project-item {
+  border-radius: 3px;
+  border: 1px solid #ebebeb;
+}
+.project .project-nav .project-list .project-item:hover {
+  background-color: #998675;
+}
+.project .project-nav .project-list .project-item:hover .project-link {
+  color: #ffffff;
+}
+.project .project-nav .project-list .project-item:active {
+  background-color: #ffffff;
+}
+.project .project-nav .project-list .project-item:active .project-link {
+  color: #8c8c8c;
+}
+.project .project-nav .project-list .project-item .project-link {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #8c8c8c;
 }
 
 /*# sourceMappingURL=main-style.css.map */
