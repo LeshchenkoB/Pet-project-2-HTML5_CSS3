@@ -607,6 +607,7 @@ button {
   outline: none;
   display: block;
   margin: 0 auto;
+  margin-top: 40px;
 }
 .project .project-button:hover {
   background-color: #ffffff;
