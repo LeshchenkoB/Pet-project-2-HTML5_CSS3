@@ -1,0 +1,51 @@
+.promo
+  @extend %padding-container
+  display: flex
+  justify-content: space-between
+  align-items: center
+  padding-top: 50px
+  padding-bottom: 50px
+  background-image: linear-gradient(to right, #211b19, #4e3427)
+
+  .promo-text
+    font-family: raleway, Arial, sans-serif
+    font-size: 28px
+    font-weight: 400
+    line-height: 27px
+    color: #ffffff
+
+    .promo-txt-color
+      color: #c7b299
+      padding: 0 5px 0 0
+
+    .promo-paragraf
+      padding: 10px 0 0 0
+      font-family: montserrat, Arial, sans-serif
+      font-weight: 300
+      font-size: 18px
+      color: #615855
+
+  .promo-button
+    width: 170px
+    height: 50px
+    border-radius: 3px
+    background-color: #998675
+    border: 0
+    outline: none
+
+    .promo-button-txt
+      font-family: raleway, Arial, sans-serif
+      font-size: 14px
+      font-weight: 800
+      line-height: 1.64
+      text-transform: uppercase
+      color: #ffffff
+    &:hover
+      background-color: #ffffff
+      cursor: pointer
+    &:hover .promo-button-txt
+      color: #998675
+    &:active
+      background-color: #998675
+    &:active .promo-button-txt
+      color: #ffffff

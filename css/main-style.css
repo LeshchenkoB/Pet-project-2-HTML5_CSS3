@@ -18,12 +18,16 @@ ol {
   margin: 0;
 }
 
+button {
+  padding: 0;
+}
+
 .container {
   width: 1920px;
   margin: 0 auto;
 }
 
-.main-header, .services, .ideas {
+.main-header, .services, .ideas, .promo {
   padding: 0 375px 0 375px;
   box-sizing: border-box;
 }
@@ -315,12 +319,6 @@ ol {
 .ideas {
   padding-top: 80px;
 }
-.ideas:after {
-  content: "";
-  display: block;
-  width: 100%;
-  clear: both;
-}
 .ideas .ideas-txt {
   display: block;
   margin: 0 0 25px 0;
@@ -349,7 +347,7 @@ ol {
 .ideas .ideas-slides .ideas-slides-left {
   position: absolute;
   z-index: 1;
-  top: 81px;
+  top: 82px;
   left: -30px;
 }
 .ideas .ideas-slides .ideas-slides-left:hover {
@@ -366,12 +364,68 @@ ol {
 .ideas .ideas-slides .ideas-slides-right {
   position: absolute;
   z-index: 1;
-  top: 81px;
+  top: 82px;
   right: -30px;
 }
 .ideas .ideas-slides .ideas-slides-right:hover {
   z-index: 4;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.promo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-image: linear-gradient(to right, #211b19, #4e3427);
+}
+.promo .promo-text {
+  font-family: raleway, Arial, sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 27px;
+  color: #ffffff;
+}
+.promo .promo-text .promo-txt-color {
+  color: #c7b299;
+  padding: 0 5px 0 0;
+}
+.promo .promo-text .promo-paragraf {
+  padding: 10px 0 0 0;
+  font-family: montserrat, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  color: #615855;
+}
+.promo .promo-button {
+  width: 170px;
+  height: 50px;
+  border-radius: 3px;
+  background-color: #998675;
+  border: 0;
+  outline: none;
+}
+.promo .promo-button .promo-button-txt {
+  font-family: raleway, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 1.64;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.promo .promo-button:hover {
+  background-color: #ffffff;
+  cursor: pointer;
+}
+.promo .promo-button:hover .promo-button-txt {
+  color: #998675;
+}
+.promo .promo-button:active {
+  background-color: #998675;
+}
+.promo .promo-button:active .promo-button-txt {
+  color: #ffffff;
 }
 
 /*# sourceMappingURL=main-style.css.map */
