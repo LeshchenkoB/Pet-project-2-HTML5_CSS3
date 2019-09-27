@@ -1,0 +1,39 @@
+.presentation
+  position: relative
+  display: flex
+  justify-content: center
+  align-items: center
+
+  .presentation-txt-wrap
+    width: 550px
+    position: absolute
+    text-align: center
+    color: #ffffff
+
+    .presentation-play
+      width: 100px
+      height: 100px
+      margin: 0 auto 40px
+      display: flex
+      justify-content: center
+      align-items: center
+      background-color: rgba(0, 0, 0, 0.2)
+      border-radius: 50%
+      &:hover
+        background-color: rgba(255, 255, 255, 0.5)
+      &:hover .icon-icon-play
+        color: #000000
+      &:active
+        background-color: rgba(0, 0, 0, 0.2)
+      &:active .icon-icon-play
+        color: #ffffff
+
+      .icon-icon-play
+        font-size: 80px
+
+    .presentation-title
+      font-family: raleway, Arial, sans-serif
+      font-weight: 500
+      font-size: 30px
+      display: block
+      margin: 0 0 30px 0

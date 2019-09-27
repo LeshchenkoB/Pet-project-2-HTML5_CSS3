@@ -603,8 +603,7 @@ button {
   box-sizing: border-box;
   outline: none;
   display: block;
-  margin: 0 auto;
-  margin-top: 40px;
+  margin: 40px auto 80px auto;
 }
 .project .project-button:hover {
   background-color: #ffffff;
@@ -626,6 +625,51 @@ button {
   line-height: 1.64;
   text-transform: uppercase;
   color: #ffffff;
+}
+
+.presentation {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.presentation .presentation-txt-wrap {
+  width: 550px;
+  position: absolute;
+  text-align: center;
+  color: #ffffff;
+}
+.presentation .presentation-txt-wrap .presentation-play {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+}
+.presentation .presentation-txt-wrap .presentation-play:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.presentation .presentation-txt-wrap .presentation-play:hover .icon-icon-play {
+  color: #000000;
+}
+.presentation .presentation-txt-wrap .presentation-play:active {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.presentation .presentation-txt-wrap .presentation-play:active .icon-icon-play {
+  color: #ffffff;
+}
+.presentation .presentation-txt-wrap .presentation-play .icon-icon-play {
+  font-size: 80px;
+}
+.presentation .presentation-txt-wrap .presentation-title {
+  font-family: raleway, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+  display: block;
+  margin: 0 0 30px 0;
 }
 
 /*# sourceMappingURL=main-style.css.map */
