@@ -671,5 +671,19 @@ button {
   display: block;
   margin: 0 0 30px 0;
 }
+.presentation .presentation-txt-wrap .presentation-paragraf {
+  margin: 0 0 40px 0;
+  font-family: montserrat, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.75;
+}
+.presentation .presentation-txt-wrap .presentation-time {
+  font-family: montserrat, Arial, sans-serif;
+  font-weight: 400;
+  line-height: 1.71;
+  font-size: 14px;
+  color: #c7b299;
+}
 
 /*# sourceMappingURL=main-style.css.map */
