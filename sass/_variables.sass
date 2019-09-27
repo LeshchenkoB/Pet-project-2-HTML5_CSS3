@@ -1,8 +1,37 @@
-@import "fonts"
+.container
+  width: 1920px
+  margin: 0 auto
 
 %padding-container
   padding: 0 375px 0 375px
   box-sizing: border-box
+
+=button()
+  width: 170px
+  min-height: 50px
+  padding: 10px
+  border: 1px solid #998675
+  border-radius: 3px
+  background-color: #998675
+  box-sizing: border-box
+  outline: none
+  &:hover
+    background-color: #ffffff
+    cursor: pointer
+  &:hover .button-txt
+    color: #998675
+  &:active
+    background-color: #998675
+  &:active .button-txt
+      color: #ffffff
+
+=button-txt()
+  font-family: raleway, Arial, sans-serif
+  font-size: 14px
+  font-weight: 800
+  line-height: 1.64
+  text-transform: uppercase
+  color: #ffffff
 
 $color-hover: #c7b299
 
