@@ -630,6 +630,7 @@ button {
 .presentation {
   position: relative;
   display: flex;
+  margin: 0 0 80px 0;
   justify-content: center;
   align-items: center;
 }
@@ -671,7 +672,7 @@ button {
   display: block;
   margin: 0 0 30px 0;
 }
-.presentation .presentation-txt-wrap .presentation-paragraf {
+.presentation .presentation-txt-wrap .presentation-txt {
   margin: 0 0 40px 0;
   font-family: montserrat, Arial, sans-serif;
   font-weight: 300;
@@ -684,6 +685,60 @@ button {
   line-height: 1.71;
   font-size: 14px;
   color: #c7b299;
+}
+
+.device {
+  display: flex;
+  justify-content: center;
+}
+.device .device-wrap {
+  width: 660px;
+  padding: 115px 0 0 30px;
+  box-sizing: border-box;
+}
+.device .device-wrap .device-title {
+  display: block;
+  margin: 0 0 30px 0;
+  font-family: raleway, Arial, sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  color: #555555;
+}
+.device .device-wrap .device-txt {
+  margin: 0 0 40px 0;
+  font-family: montserrat, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.75;
+  color: #8c8c8c;
+}
+.device .device-wrap .device-list {
+  margin: 0 0 45px 0;
+  font-family: montserrat, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.75;
+  color: #8c8c8c;
+  list-style-position: inside;
+}
+.device .device-wrap .device-list .device-item {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  padding: 0 0 0 80px;
+  line-height: 2;
+  box-sizing: border-box;
+  position: relative;
+}
+.device .device-wrap .device-list .device-item:before {
+  display: inline-block;
+  content: " ";
+  background-image: url(../img/li.svg);
+  background-size: 21px 21px;
+  height: 21px;
+  width: 21px;
+  position: absolute;
+  left: 40px;
 }
 
 /*# sourceMappingURL=main-style.css.map */
