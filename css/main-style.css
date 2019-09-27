@@ -463,38 +463,36 @@ button {
   color: #8c8c8c;
 }
 .project .project-nav {
-  margin: 0 0 40px 0;
-  display: flex;
-  justify-content: center;
-}
-.project .project-nav .project-list {
-  display: flex;
   width: 100%;
+  margin: 0 0 40px 0;
   padding: 0 280px;
+  box-sizing: border-box;
+  display: flex;
   justify-content: space-between;
-  list-style-type: none;
+}
+.project .project-nav .project-btn-light {
   font-family: montserrat, Arial, sans-serif;
   font-weight: 300;
   font-size: 14px;
   line-height: 1.5;
-}
-.project .project-nav .project-list .project-item {
   border-radius: 3px;
   border: 1px solid #ebebeb;
+  background-color: #ffffff;
+  outline: none;
 }
-.project .project-nav .project-list .project-item:hover {
+.project .project-nav .project-btn-light:hover {
   background-color: #998675;
 }
-.project .project-nav .project-list .project-item:hover .project-link {
+.project .project-nav .project-btn-light:hover .button-light-txt {
   color: #ffffff;
 }
-.project .project-nav .project-list .project-item:active {
+.project .project-nav .project-btn-light:active {
   background-color: #ffffff;
 }
-.project .project-nav .project-list .project-item:active .project-link {
+.project .project-nav .project-btn-light:active .button-light-txt {
   color: #8c8c8c;
 }
-.project .project-nav .project-list .project-item .project-link {
+.project .project-nav .project-btn-light .project-btn-light-txt {
   display: block;
   padding: 10px 20px;
   text-decoration: none;
