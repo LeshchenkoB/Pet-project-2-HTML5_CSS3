@@ -28,7 +28,7 @@ button {
   margin: 0 auto;
 }
 
-.main-header, .services, .ideas, .promo, .project {
+.main-header, .services, .ideas, .promo, .project, .posts {
   padding: 0 375px 0 375px;
   box-sizing: border-box;
 }
@@ -68,6 +68,12 @@ button {
   src: url("../fonts/raleway/extra-bold/raleway-extra-bold.woff2"), url("../fonts/raleway/extra-bold/raleway-extra-bold.woff"), url("../fonts/raleway/extra-bold/raleway-extra-bold.ttf");
   font-style: normal;
   font-weight: 800;
+}
+@font-face {
+  font-family: "roboto";
+  src: url("../fonts/Roboto/regular/roboto-regular.woff2"), url("../fonts/Roboto/regular/roboto-regular.woff"), url("../fonts/Roboto/regular/roboto-regular.ttf");
+  font-style: normal;
+  font-weight: 400;
 }
 .main-header {
   width: 100%;
@@ -792,6 +798,146 @@ button {
   font-size: 14px;
   font-weight: 300;
   line-height: 1.43;
+  color: #c7b299;
+  text-transform: uppercase;
+}
+
+.posts {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.posts .posts-txt-wrap {
+  width: 760px;
+  margin: 0 auto;
+  text-align: center;
+}
+.posts .posts-txt-wrap .posts-title {
+  display: block;
+  margin: 0 0 30px 0;
+  font-family: raleway, Arial, sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  color: #555555;
+}
+.posts .posts-txt-wrap .posts-txt {
+  margin: 0 0 40px 0;
+  font-family: montserrat, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.75;
+  color: #8c8c8c;
+}
+.posts .posts-card {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 30px 0;
+}
+.posts .posts-card .posts-card-item {
+  width: 370px;
+  position: relative;
+  border: 1px solid #f8f8f8;
+  box-sizing: border-box;
+}
+.posts .posts-card .posts-card-item:hover .post-card-img {
+  filter: brightness(50%);
+}
+.posts .posts-card .posts-card-item:hover .posts-card-txt-wrap {
+  background-color: #362f2d;
+}
+.posts .posts-card .posts-card-item:hover .posts-card-title {
+  color: #c7b299;
+}
+.posts .posts-card .posts-card-item:hover .posts-card-txt {
+  color: #ffffff;
+}
+.posts .posts-card .posts-card-item:hover .posts-card-day {
+  background-color: #c7b299;
+}
+.posts .posts-card .posts-card-item:hover .posts-card-month {
+  background-color: #a48d72;
+}
+.posts .posts-card .posts-card-item .post-card-img {
+  display: block;
+  width: 100%;
+}
+.posts .posts-card .posts-card-item .posts-card-txt-wrap {
+  padding: 30px;
+  box-sizing: border-box;
+}
+.posts .posts-card .posts-card-item .posts-card-txt-wrap .posts-card-title {
+  display: block;
+  margin: 0 0 20px 0;
+  font-family: raleway, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: #555555;
+}
+.posts .posts-card .posts-card-item .posts-card-txt-wrap .posts-card-txt {
+  margin: 0 0 25px 0;
+  font-family: montserrat, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.43;
+  color: #8c8c8c;
+}
+.posts .posts-card .posts-card-item .posts-card-txt-wrap .posts-card-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-family: montserrat, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.43;
+  color: #c7b299;
+}
+.posts .posts-card .posts-card-item .posts-card-txt-wrap .posts-card-link i {
+  font-size: 7px;
+  padding: 0 0 0 10px;
+}
+.posts .posts-card .posts-card-item .posts-card-date {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 50px;
+}
+.posts .posts-card .posts-card-item .posts-card-date .posts-card-day {
+  background-color: #363636;
+  padding: 10px;
+  box-sizing: border-box;
+  font-family: montserrat, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 0.83;
+  color: #ffffff;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+.posts .posts-card .posts-card-item .posts-card-date .posts-card-month {
+  padding: 5px 10px 5px 15px;
+  box-sizing: border-box;
+  background-color: #252525;
+  font-family: roboto, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  color: #ffffff;
+  line-height: 1.67;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+.posts .posts-pagination {
+  display: flex;
+  margin: 0 auto;
+  width: 55px;
+  justify-content: space-between;
+}
+.posts .posts-pagination i {
+  font-size: 22px;
+  color: #c7b299;
+}
+.posts .posts-pagination i:hover {
+  color: #d1d1d1;
+}
+.posts .posts-pagination i:active {
   color: #c7b299;
 }
 
