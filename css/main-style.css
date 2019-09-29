@@ -28,7 +28,7 @@ button {
   margin: 0 auto;
 }
 
-.main-header, .services, .ideas, .promo, .project, .posts, .logos {
+.main-header, .services, .ideas, .promo, .project, .posts, .logos, .footer {
   padding: 0 375px 0 375px;
   box-sizing: border-box;
 }
@@ -62,6 +62,12 @@ button {
   src: url("../fonts/raleway/semi-bold/raleway-semi-bold.woff2"), url("../fonts/raleway/semi-bold/raleway-semi-bold.woff"), url("../fonts/raleway/semi-bold/raleway-semi-bold.ttf");
   font-style: normal;
   font-weight: 600;
+}
+@font-face {
+  font-family: "raleway";
+  src: url("../fonts/raleway/bold/raleway-bold.woff2"), url("../fonts/raleway/bold/raleway-bold.woff"), url("../fonts/raleway/bold/raleway-bold.ttf");
+  font-style: normal;
+  font-weight: 700;
 }
 @font-face {
   font-family: "raleway";
@@ -955,6 +961,142 @@ button {
   transition: 0.5s;
 }
 .logos .logos-link:not(:hover) {
+  transition: 0.5s;
+}
+
+.footer {
+  padding-top: 80px;
+  background-color: #191919;
+  color: #ffffff;
+}
+.footer .footer-txt {
+  display: flex;
+  justify-content: space-between;
+}
+.footer .footer-txt .footer-txt-column {
+  width: 270px;
+}
+.footer .footer-txt .footer-txt-column .footer-logo {
+  display: flex;
+  margin: 0 0 30px 0;
+  font-family: raleway, Arial, sans-serif;
+  font-size: 34px;
+  font-weight: 400;
+  letter-spacing: -1.36px;
+  line-height: 55px;
+  text-decoration: none;
+  color: #ffffff;
+  align-items: center;
+}
+.footer .footer-txt .footer-txt-column .footer-logo:hover {
+  color: #c7b299;
+}
+.footer .footer-txt .footer-txt-column .footer-logo:active {
+  color: #fff;
+}
+.footer .footer-txt .footer-txt-column .footer-logo .icon-logos {
+  display: block;
+  width: 60px;
+  font-size: 51px;
+}
+.footer .footer-txt .footer-txt-column .footer-paragraf {
+  margin: 0 0 30px 0;
+  font-family: montserrat, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.71;
+  color: #555555;
+}
+.footer .footer-txt .footer-txt-column .footer-link {
+  display: flex;
+  align-items: center;
+  font-family: montserrat, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.43;
+  color: #d1d1d1;
+  text-decoration: none;
+}
+.footer .footer-txt .footer-txt-column .footer-link:hover {
+  color: #c7b299;
+}
+.footer .footer-txt .footer-txt-column .footer-link:active {
+  color: #fff;
+}
+.footer .footer-txt .footer-txt-column .footer-link i {
+  font-size: 7px;
+  padding: 0 0 0 10px;
+}
+.footer .footer-txt .footer-txt-column .footer-title {
+  display: block;
+  margin: 0 0 30px 0;
+  padding: 20px 0 0 0;
+  box-sizing: border-box;
+  font-family: raleway, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  color: #ffffff;
+}
+.footer .footer-txt .footer-txt-column .footer-txt-block-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer .footer-txt .footer-txt-column .footer-txt-block-wrap .footer-txt-block {
+  margin: 0 0 20px 0;
+  border-bottom: 2px solid #555555;
+}
+.footer .footer-txt .footer-txt-column .footer-txt-block-wrap .footer-txt-block:last-child {
+  border-bottom: none;
+}
+.footer .footer-txt .footer-txt-column .footer-txt-block-wrap .footer-txt-block:hover .footer-block-date {
+  color: #ffffff;
+}
+.footer .footer-txt .footer-txt-column .footer-txt-block-wrap .footer-txt-block:hover .footer-block-paragraf {
+  color: #c7b299;
+}
+.footer .footer-txt .footer-txt-column .footer-txt-block-wrap .footer-txt-block:hover .footer-block-timeAgo {
+  color: #c7b299;
+}
+.footer .footer-txt .footer-txt-column .footer-txt-block-wrap .footer-txt-block .footer-block-date {
+  display: block;
+  margin: 0 0 10px 0;
+  font-family: montserrat, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 1.67;
+  color: #363636;
+}
+.footer .footer-txt .footer-txt-column .footer-txt-block-wrap .footer-txt-block .footer-block-paragraf {
+  margin: 0 0 20px 0;
+  font-family: montserrat, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.43;
+  color: #555555;
+}
+.footer .footer-txt .footer-txt-column .footer-txt-block-wrap .footer-txt-block .footer-block-timeAgo {
+  display: block;
+  margin: 0 0 20px 0;
+  font-family: montserrat, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  color: #363636;
+}
+.footer .footer-txt .footer-txt-column .footer-widjet {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.footer .footer-txt .footer-txt-column .footer-widjet .footer-widjet-link {
+  display: block;
+  margin: 0 0 5px 0;
+}
+.footer .footer-txt .footer-txt-column .footer-widjet .footer-widjet-link:hover .footer-widjet-item {
+  transform: scale(1.05);
+  transition: 0.5s;
+}
+.footer .footer-txt .footer-txt-column .footer-widjet .footer-widjet-link:not(:hover) .footer-widjet-item {
   transition: 0.5s;
 }
 
