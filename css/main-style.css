@@ -28,7 +28,7 @@ button {
   margin: 0 auto;
 }
 
-.main-header, .services, .ideas, .promo, .project, .posts, .logos, .footer {
+.main-header, .services, .ideas, .promo, .project, .posts, .logos, .footer, .footer-copyright {
   padding: 0 375px 0 375px;
   box-sizing: border-box;
 }
@@ -1098,6 +1098,12 @@ button {
 }
 .footer .footer-txt .footer-txt-column .footer-widjet .footer-widjet-link:not(:hover) .footer-widjet-item {
   transition: 0.5s;
+}
+
+.footer-copyright {
+  padding-top: 45px;
+  padding-bottom: 50px;
+  background-color: #555555;
 }
 
 /*# sourceMappingURL=main-style.css.map */
