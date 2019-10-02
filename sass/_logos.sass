@@ -1,0 +1,15 @@
+.logos
+  @extend %padding-container
+  display: flex
+  justify-content: space-between
+  align-items: center
+  width: 100%
+  min-height: 490px
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/photo-logos.png) no-repeat center top
+  background-size: cover
+
+  .logos-link:hover
+    transform: scale(1.4)
+    transition: $transition-time
+  .logos-link:not(:hover)
+    transition: $transition-time

@@ -15,6 +15,7 @@
   background-color: #998675
   box-sizing: border-box
   outline: none
+  transition: background-color 0.3s, color 0.3s
   &:hover
     background-color: #ffffff
     cursor: pointer
@@ -23,16 +24,19 @@
   &:active
     background-color: #998675
   &:active .button-txt
-      color: #ffffff
+    color: #ffffff
 
 =button-txt()
-  font-family: raleway, Arial, sans-serif
+  font-family: raleway, $font-family
   font-size: 14px
   font-weight: 800
   line-height: 1.64
   text-transform: uppercase
   color: #ffffff
+  transition: color $transition-time
 
 $color-hover: #c7b299
-
 $color-active: #fff
+$transition-time: 0.4s
+$font-family: Arial, sans-serif
+
