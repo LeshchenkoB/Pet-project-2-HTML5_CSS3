@@ -186,7 +186,8 @@ input[type="search"]:focus {
 .header-wrap .header-text-wrap {
   color: #ffffff;
 }
-.header-wrap .header-text-wrap .header-text-small {
+
+.header-text-small {
   display: block;
   margin: 0 0 15px 0;
   font-family: raleway, Arial, sans-serif;
@@ -195,7 +196,8 @@ input[type="search"]:focus {
   line-height: 36px;
   text-align: center;
 }
-.header-wrap .header-text-wrap .header-text-big {
+
+.header-text-big {
   display: block;
   margin: 0 0 20px 0;
   font-family: raleway, Arial, sans-serif;
@@ -204,7 +206,8 @@ input[type="search"]:focus {
   line-height: 52px;
   text-align: center;
 }
-.header-wrap .header-text-wrap .header-text {
+
+.header-text {
   margin: 0 0 50px 0;
   font-family: montserrat, Arial sans-serif;
   font-weight: 300;
@@ -212,7 +215,8 @@ input[type="search"]:focus {
   line-height: 24px;
   text-align: center;
 }
-.header-wrap .header-text-wrap .header-button {
+
+.header-button {
   width: 170px;
   min-height: 50px;
   padding: 10px;
@@ -221,29 +225,31 @@ input[type="search"]:focus {
   background-color: #998675;
   box-sizing: border-box;
   outline: none;
+  transition: background-color 0.3s, color 0.3s;
   display: block;
   margin: 0 auto;
 }
-.header-wrap .header-text-wrap .header-button:hover {
+.header-button:hover {
   background-color: #ffffff;
   cursor: pointer;
 }
-.header-wrap .header-text-wrap .header-button:hover .button-txt {
+.header-button:hover .button-txt {
   color: #998675;
 }
-.header-wrap .header-text-wrap .header-button:active {
+.header-button:active {
   background-color: #998675;
 }
-.header-wrap .header-text-wrap .header-button:active .button-txt {
+.header-button:active .button-txt {
   color: #ffffff;
 }
-.header-wrap .header-text-wrap .header-button .header-button-txt {
+.header-button .header-button-txt {
   font-family: raleway, Arial, sans-serif;
   font-size: 14px;
   font-weight: 800;
   line-height: 1.64;
   text-transform: uppercase;
   color: #ffffff;
+  transition: color 0.3s;
 }
 
 .header-pagination {
@@ -473,6 +479,7 @@ input[type="search"]:focus {
   background-color: #998675;
   box-sizing: border-box;
   outline: none;
+  transition: background-color 0.3s, color 0.3s;
 }
 .promo .promo-button:hover {
   background-color: #ffffff;
@@ -494,6 +501,7 @@ input[type="search"]:focus {
   line-height: 1.64;
   text-transform: uppercase;
   color: #ffffff;
+  transition: color 0.3s;
 }
 
 .project {
@@ -536,6 +544,7 @@ input[type="search"]:focus {
   border: 1px solid #ebebeb;
   background-color: #ffffff;
   outline: none;
+  transition: background-color 0.4s;
 }
 .project .project-nav .project-btn-light:hover {
   background-color: #998675;
@@ -553,6 +562,7 @@ input[type="search"]:focus {
   display: block;
   padding: 10px 20px;
   color: #8c8c8c;
+  transition: color 0.4s;
 }
 .project .project-card {
   display: flex;
@@ -589,6 +599,7 @@ input[type="search"]:focus {
 .project .project-card .project-card-item .project-card-img {
   display: block;
   width: 100%;
+  transition: filter 0.4s;
 }
 .project .project-card .project-card-item .project-card-txt-wrap {
   width: 100%;
@@ -597,6 +608,7 @@ input[type="search"]:focus {
   position: relative;
   background-color: #fbfaf8;
   text-align: left;
+  transition: background-color 0.4s;
 }
 .project .project-card .project-card-item .project-card-txt-wrap:before {
   content: "";
@@ -605,6 +617,7 @@ input[type="search"]:focus {
   position: absolute;
   top: -20px;
   left: 25px;
+  transition: border-bottom 0.4s;
 }
 .project .project-card .project-card-item .project-card-txt-wrap .project-card-title {
   display: block;
@@ -613,6 +626,7 @@ input[type="search"]:focus {
   font-weight: 500;
   font-size: 20px;
   color: #c7b299;
+  transition: color 0.4s;
 }
 .project .project-card .project-card-item .project-card-txt-wrap .project-card-txt {
   display: block;
@@ -621,6 +635,7 @@ input[type="search"]:focus {
   font-size: 14px;
   line-height: 1.43;
   color: #d1d1d1;
+  transition: color 0.4s;
 }
 .project .project-card .project-card-item .project-card-btn-link {
   display: none;
@@ -629,6 +644,7 @@ input[type="search"]:focus {
   left: 40%;
   font-size: 28px;
   color: #ffffff;
+  transition: color 0.4s;
 }
 .project .project-card .project-card-item .project-card-btn-link:hover {
   color: #c7b299;
@@ -643,6 +659,7 @@ input[type="search"]:focus {
   right: 40%;
   font-size: 28px;
   color: #ffffff;
+  transition: color 0.4s;
 }
 .project .project-card .project-card-item .project-card-btn-search:hover {
   color: #c7b299;
@@ -659,6 +676,7 @@ input[type="search"]:focus {
   background-color: #998675;
   box-sizing: border-box;
   outline: none;
+  transition: background-color 0.3s, color 0.3s;
   display: block;
   margin: 40px auto 80px auto;
 }
@@ -682,6 +700,7 @@ input[type="search"]:focus {
   line-height: 1.64;
   text-transform: uppercase;
   color: #ffffff;
+  transition: color 0.3s;
 }
 
 .presentation {
