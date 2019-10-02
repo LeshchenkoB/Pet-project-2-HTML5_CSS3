@@ -1,12 +1,13 @@
 .footer
-  @extend %padding-container
-  padding-top: 80px
-  background-color: #191919
+  width: 1920px
   color: #ffffff
 
   .footer-txt
+    @extend %padding-container
+    padding-top: 80px
     display: flex
     justify-content: space-between
+    background-color: #191919
 
     .footer-txt-column
       width: 270px
@@ -126,6 +127,39 @@
 
 .footer-copyright
   @extend %padding-container
+  background-color: #111111
   padding-top: 45px
   padding-bottom: 50px
-  background-color: #555555
+  display: flex
+  justify-content: space-between
+
+  .footer-vl
+    padding: 0 10px 0 10px
+
+  .footer-copyright-left
+    color: #555555
+    font-family: montserrat, Arial,sans-serif
+    font-weight: 300
+    font-size: 13px
+    line-height: 1.54
+
+    .copyrigth-left-link
+      color: #555555
+      text-decoration: none
+      &:hover
+        color: #959595
+
+  .footer-copyright-right
+    color: #555555
+    font-family: montserrat, Arial,sans-serif
+    font-weight: 300
+    font-size: 13px
+    line-height: 1.54
+
+    .copyrigth-right-link
+      color: #555555
+      text-decoration: none
+      &:hover
+        color: #959595
+
+
