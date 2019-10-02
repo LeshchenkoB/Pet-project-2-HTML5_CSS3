@@ -838,55 +838,68 @@ button {
   justify-content: space-between;
   margin: 0 0 30px 0;
 }
-.posts .posts-card .posts-card-item {
+
+.posts-card-item {
   width: 370px;
   position: relative;
   border: 1px solid #f8f8f8;
   box-sizing: border-box;
 }
-.posts .posts-card .posts-card-item:hover .post-card-img {
+.posts-card-item:hover .post-card-img {
   filter: brightness(50%);
 }
-.posts .posts-card .posts-card-item:hover .posts-card-txt-wrap {
+.posts-card-item:hover .posts-card-txt-wrap {
   background-color: #362f2d;
 }
-.posts .posts-card .posts-card-item:hover .posts-card-title {
+.posts-card-item:hover .posts-card-title {
   color: #c7b299;
 }
-.posts .posts-card .posts-card-item:hover .posts-card-txt {
+.posts-card-item:hover .posts-card-txt {
   color: #ffffff;
 }
-.posts .posts-card .posts-card-item:hover .posts-card-day {
+.posts-card-item:hover .posts-card-link {
+  color: #c7b299;
+}
+.posts-card-item:hover .posts-card-day {
   background-color: #c7b299;
 }
-.posts .posts-card .posts-card-item:hover .posts-card-month {
+.posts-card-item:hover .posts-card-month {
   background-color: #a48d72;
 }
-.posts .posts-card .posts-card-item .post-card-img {
+
+.post-card-img {
   display: block;
   width: 100%;
+  transition: filter 0.3s;
 }
-.posts .posts-card .posts-card-item .posts-card-txt-wrap {
+
+.posts-card-txt-wrap {
   padding: 30px;
   box-sizing: border-box;
+  transition: background-color 0.3s;
 }
-.posts .posts-card .posts-card-item .posts-card-txt-wrap .posts-card-title {
+
+.posts-card-title {
   display: block;
   margin: 0 0 20px 0;
   font-family: raleway, Arial, sans-serif;
   font-weight: 500;
   font-size: 20px;
   color: #555555;
+  transition: color 0.3s;
 }
-.posts .posts-card .posts-card-item .posts-card-txt-wrap .posts-card-txt {
+
+.posts-card-txt {
   margin: 0 0 25px 0;
   font-family: montserrat, Arial, sans-serif;
   font-weight: 300;
   font-size: 14px;
   line-height: 1.43;
   color: #8c8c8c;
+  transition: color 0.3s;
 }
-.posts .posts-card .posts-card-item .posts-card-txt-wrap .posts-card-link {
+
+.posts-card-link {
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -895,18 +908,20 @@ button {
   font-size: 14px;
   line-height: 1.43;
   color: #c7b299;
+  transition: color 0.3s;
 }
-.posts .posts-card .posts-card-item .posts-card-txt-wrap .posts-card-link i {
+.posts-card-link i {
   font-size: 7px;
   padding: 0 0 0 10px;
 }
-.posts .posts-card .posts-card-item .posts-card-date {
+
+.posts-card-date {
   position: absolute;
   top: 20px;
   left: 20px;
   width: 50px;
 }
-.posts .posts-card .posts-card-item .posts-card-date .posts-card-day {
+.posts-card-date .posts-card-day {
   background-color: #363636;
   padding: 10px;
   box-sizing: border-box;
@@ -917,8 +932,9 @@ button {
   color: #ffffff;
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
+  transition: background-color 0.3s;
 }
-.posts .posts-card .posts-card-item .posts-card-date .posts-card-month {
+.posts-card-date .posts-card-month {
   padding: 5px 10px 5px 15px;
   box-sizing: border-box;
   background-color: #252525;
@@ -929,21 +945,23 @@ button {
   line-height: 1.67;
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
+  transition: background-color 0.3s;
 }
-.posts .posts-pagination {
+
+.posts-pagination {
   display: flex;
   margin: 0 auto;
   width: 55px;
   justify-content: space-between;
 }
-.posts .posts-pagination i {
+.posts-pagination i {
   font-size: 22px;
   color: #c7b299;
 }
-.posts .posts-pagination i:hover {
+.posts-pagination i:hover {
   color: #d1d1d1;
 }
-.posts .posts-pagination i:active {
+.posts-pagination i:active {
   color: #c7b299;
 }
 
