@@ -474,18 +474,21 @@ input[type="search"]:focus {
   line-height: 27px;
   color: #ffffff;
 }
-.promo .promo-txt .promo-title-color {
+
+.promo-title-color {
   color: #c7b299;
   padding: 0 5px 0 0;
 }
-.promo .promo-txt .promo-paragraf {
+
+.promo-paragraf {
   padding: 10px 0 0 0;
   font-family: montserrat, Arial, sans-serif;
   font-weight: 300;
   font-size: 18px;
   color: #615855;
 }
-.promo .promo-button {
+
+.promo-button {
   width: 170px;
   min-height: 50px;
   padding: 10px;
@@ -496,20 +499,21 @@ input[type="search"]:focus {
   outline: none;
   transition: background-color 0.3s, color 0.3s;
 }
-.promo .promo-button:hover {
+.promo-button:hover {
   background-color: #ffffff;
   cursor: pointer;
 }
-.promo .promo-button:hover .button-txt {
+.promo-button:hover .button-txt {
   color: #998675;
 }
-.promo .promo-button:active {
+.promo-button:active {
   background-color: #998675;
 }
-.promo .promo-button:active .button-txt {
+.promo-button:active .button-txt {
   color: #ffffff;
 }
-.promo .promo-button .promo-button-txt {
+
+.promo-button-txt {
   font-family: raleway, Arial, sans-serif;
   font-size: 14px;
   font-weight: 800;
