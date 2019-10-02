@@ -108,6 +108,7 @@ button {
   color: #ffffff;
   justify-content: space-between;
   align-items: center;
+  transition: color 0.4s;
 }
 .header-logo:hover {
   color: #c7b299;
@@ -138,6 +139,7 @@ button {
 .header-nav-item a {
   color: #ffffff;
   text-decoration: none;
+  transition: color 0.4s;
 }
 .header-nav-item a:hover {
   color: #c7b299;
@@ -262,19 +264,21 @@ input[type="search"]:focus {
   margin: 0 auto;
   top: 575px;
 }
-.header-pagination .header-pagination-link {
+
+.header-pagination-link {
   width: 10px;
   height: 10px;
   border-radius: 50%;
   background-color: #cccccc;
   border: 2px solid transparent;
+  transition: scale 0.4s, background-color 0.4s;
 }
-.header-pagination .header-pagination-link:hover {
+.header-pagination-link:hover {
   border: 2px solid #cccccc;
   background-color: transparent;
   transform: scale(1.4);
 }
-.header-pagination .header-pagination-link:active {
+.header-pagination-link:active {
   border: 2px solid #cccccc;
   background-color: #cccccc;
   transform: scale(1.4);
@@ -286,6 +290,7 @@ input[type="search"]:focus {
   color: #ccc;
   top: 40%;
   left: -20%;
+  transition: color 0.4s;
 }
 .header-slide-left:hover {
   color: #c7b299;
@@ -300,6 +305,7 @@ input[type="search"]:focus {
   color: #ccc;
   top: 40%;
   right: -20%;
+  transition: color 0.4s;
 }
 .header-slide-right:hover {
   color: #c7b299;
@@ -319,6 +325,7 @@ input[type="search"]:focus {
 .header-nav-cart .icon-icon-cart {
   font-size: 24px;
   color: #ffffff;
+  transition: color 0.4s;
 }
 .header-nav-cart .icon-icon-cart:hover {
   color: #c7b299;

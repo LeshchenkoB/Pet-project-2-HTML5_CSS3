@@ -25,6 +25,7 @@
     color: #ffffff
     justify-content: space-between
     align-items: center
+    transition: color 0.4s
     &:hover
         color: $color-hover
     &:active
@@ -49,6 +50,7 @@
     a
         color: #ffffff
         text-decoration: none
+        transition: color 0.4s
         &:hover
             color: $color-hover
         &:active
@@ -134,20 +136,21 @@ input[type="search"]
     margin: 0 auto
     top: 575px
 
-    .header-pagination-link
-        width: 10px
-        height: 10px
-        border-radius: 50%
+.header-pagination-link
+    width: 10px
+    height: 10px
+    border-radius: 50%
+    background-color: #cccccc
+    border: 2px solid transparent
+    transition: scale 0.4s, background-color 0.4s
+    &:hover
+        border: 2px solid #cccccc
+        background-color: transparent
+        transform: scale(1.4)
+    &:active
+        border: 2px solid #cccccc
         background-color: #cccccc
-        border: 2px solid transparent
-        &:hover
-            border: 2px solid #cccccc
-            background-color: transparent
-            transform: scale(1.4)
-        &:active
-            border: 2px solid #cccccc
-            background-color: #cccccc
-            transform: scale(1.4)
+        transform: scale(1.4)
 
 .header-slide-left
     position: absolute
@@ -155,6 +158,7 @@ input[type="search"]
     color: #ccc
     top: 40%
     left: -20%
+    transition: color 0.4s
     &:hover
         color: $color-hover
     &:active
@@ -166,6 +170,7 @@ input[type="search"]
     color: #ccc
     top: 40%
     right: -20%
+    transition: color 0.4s
     &:hover
         color: $color-hover
     &:active
@@ -181,6 +186,7 @@ input[type="search"]
     .icon-icon-cart
         font-size: 24px
         color: #ffffff
+        transition: color 0.4s
         &:hover
             color: $color-hover
             cursor: pointer
