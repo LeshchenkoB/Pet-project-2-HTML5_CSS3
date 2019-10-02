@@ -507,11 +507,12 @@ input[type="search"]:focus {
 .project {
   padding-top: 80px;
 }
-.project .project-txt {
+
+.project-txt {
   padding: 0 205px;
   text-align: center;
 }
-.project .project-txt .project-title {
+.project-txt .project-title {
   display: block;
   margin: 0 0 15px 0;
   font-family: raleway, Arial, sans-serif;
@@ -519,7 +520,7 @@ input[type="search"]:focus {
   font-weight: 600;
   color: #555555;
 }
-.project .project-txt .project-paragraf {
+.project-txt .project-paragraf {
   margin: 0 0 40px 0;
   font-family: montserrat, Arial, sans-serif;
   font-size: 16px;
@@ -527,7 +528,8 @@ input[type="search"]:focus {
   line-height: 1.75;
   color: #8c8c8c;
 }
-.project .project-nav {
+
+.project-nav {
   width: 100%;
   margin: 0 0 40px 0;
   padding: 0 280px;
@@ -535,7 +537,7 @@ input[type="search"]:focus {
   display: flex;
   justify-content: space-between;
 }
-.project .project-nav .project-btn-light {
+.project-nav .project-btn-light {
   font-family: montserrat, Arial, sans-serif;
   font-weight: 300;
   font-size: 14px;
@@ -546,62 +548,65 @@ input[type="search"]:focus {
   outline: none;
   transition: background-color 0.4s;
 }
-.project .project-nav .project-btn-light:hover {
+.project-nav .project-btn-light:hover {
   background-color: #998675;
 }
-.project .project-nav .project-btn-light:hover .button-light-txt {
+.project-nav .project-btn-light:hover .button-light-txt {
   color: #ffffff;
 }
-.project .project-nav .project-btn-light:active {
+.project-nav .project-btn-light:active {
   background-color: #ffffff;
 }
-.project .project-nav .project-btn-light:active .button-light-txt {
+.project-nav .project-btn-light:active .button-light-txt {
   color: #8c8c8c;
 }
-.project .project-nav .project-btn-light .project-btn-light-txt {
+.project-nav .project-btn-light .project-btn-light-txt {
   display: block;
   padding: 10px 20px;
   color: #8c8c8c;
   transition: color 0.4s;
 }
-.project .project-card {
+
+.project-card {
   display: flex;
   justify-content: space-between;
   text-align: center;
   flex-wrap: wrap;
 }
-.project .project-card .project-card-item {
+.project-card .project-card-item {
   position: relative;
   width: 370px;
   margin: 0 0 30px 0;
 }
-.project .project-card .project-card-item:hover .project-card-img {
+.project-card .project-card-item:hover .project-card-img {
   filter: brightness(50%);
 }
-.project .project-card .project-card-item:hover .project-card-txt-wrap {
+.project-card .project-card-item:hover .project-card-txt-wrap {
   background-color: #362f2d;
 }
-.project .project-card .project-card-item:hover .project-card-title {
+.project-card .project-card-item:hover .project-card-title {
   color: #ffffff;
 }
-.project .project-card .project-card-item:hover .project-card-txt {
+.project-card .project-card-item:hover .project-card-txt {
   color: #c7b299;
 }
-.project .project-card .project-card-item:hover .project-card-btn-link {
+.project-card .project-card-item:hover .project-card-btn-link {
   display: block;
 }
-.project .project-card .project-card-item:hover .project-card-btn-search {
+.project-card .project-card-item:hover .project-card-btn-search {
   display: block;
 }
-.project .project-card .project-card-item:hover .project-card-txt-wrap:before {
+.project-card .project-card-item:hover .project-card-txt-wrap:before {
   border-bottom: 10px solid #362f2d;
 }
-.project .project-card .project-card-item .project-card-img {
+
+.project-card-img {
   display: block;
   width: 100%;
   transition: filter 0.4s;
 }
-.project .project-card .project-card-item .project-card-txt-wrap {
+
+.project-card-txt-wrap {
   width: 100%;
   padding: 30px;
   box-sizing: border-box;
@@ -610,7 +615,7 @@ input[type="search"]:focus {
   text-align: left;
   transition: background-color 0.4s;
 }
-.project .project-card .project-card-item .project-card-txt-wrap:before {
+.project-card-txt-wrap:before {
   content: "";
   border: 10px solid transparent;
   border-bottom: 10px solid #fbfaf8;
@@ -619,7 +624,7 @@ input[type="search"]:focus {
   left: 25px;
   transition: border-bottom 0.4s;
 }
-.project .project-card .project-card-item .project-card-txt-wrap .project-card-title {
+.project-card-txt-wrap .project-card-title {
   display: block;
   margin: 0 0 15px 0;
   font-family: raleway, Arial, sans-serif;
@@ -628,7 +633,7 @@ input[type="search"]:focus {
   color: #c7b299;
   transition: color 0.4s;
 }
-.project .project-card .project-card-item .project-card-txt-wrap .project-card-txt {
+.project-card-txt-wrap .project-card-txt {
   display: block;
   font-family: montserrat, Arial, sans-serif;
   font-weight: 300;
@@ -637,7 +642,8 @@ input[type="search"]:focus {
   color: #d1d1d1;
   transition: color 0.4s;
 }
-.project .project-card .project-card-item .project-card-btn-link {
+
+.project-card-btn-link {
   display: none;
   position: absolute;
   top: 40%;
@@ -646,13 +652,14 @@ input[type="search"]:focus {
   color: #ffffff;
   transition: color 0.4s;
 }
-.project .project-card .project-card-item .project-card-btn-link:hover {
+.project-card-btn-link:hover {
   color: #c7b299;
 }
-.project .project-card .project-card-item .project-card-btn-link:active {
+.project-card-btn-link:active {
   color: #ffffff;
 }
-.project .project-card .project-card-item .project-card-btn-search {
+
+.project-card-btn-search {
   display: none;
   position: absolute;
   top: 40%;
@@ -661,13 +668,14 @@ input[type="search"]:focus {
   color: #ffffff;
   transition: color 0.4s;
 }
-.project .project-card .project-card-item .project-card-btn-search:hover {
+.project-card-btn-search:hover {
   color: #c7b299;
 }
-.project .project-card .project-card-item .project-card-btn-search:active {
+.project-card-btn-search:active {
   color: #ffffff;
 }
-.project .project-button {
+
+.project-button {
   width: 170px;
   min-height: 50px;
   padding: 10px;
@@ -680,20 +688,20 @@ input[type="search"]:focus {
   display: block;
   margin: 40px auto 80px auto;
 }
-.project .project-button:hover {
+.project-button:hover {
   background-color: #ffffff;
   cursor: pointer;
 }
-.project .project-button:hover .button-txt {
+.project-button:hover .button-txt {
   color: #998675;
 }
-.project .project-button:active {
+.project-button:active {
   background-color: #998675;
 }
-.project .project-button:active .button-txt {
+.project-button:active .button-txt {
   color: #ffffff;
 }
-.project .project-button .project-button-txt {
+.project-button .project-button-txt {
   font-family: raleway, Arial, sans-serif;
   font-size: 14px;
   font-weight: 800;
