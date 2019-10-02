@@ -339,7 +339,8 @@ input[type="search"]:focus {
   padding-bottom: 80px;
   width: 100%;
 }
-.services .services-item {
+
+.services-item {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -348,36 +349,39 @@ input[type="search"]:focus {
   text-align: center;
   color: #555555;
 }
-.services .services-item:after {
+.services-item:after {
   content: "";
   display: block;
   width: 70px;
   height: 3px;
   background-color: #555555;
+  transition: background-color 0.4s;
 }
-.services .services-item:hover i {
+.services-item:hover i {
   color: #c7b299;
 }
-.services .services-item:hover .services-txt {
+.services-item:hover .services-txt {
   color: #c7b299;
 }
-.services .services-item:hover:after {
+.services-item:hover:after {
   background-color: #c7b299;
 }
-.services .services-item i {
+.services-item i {
   display: block;
   width: 100%;
   margin: 0 0 20px 0;
   font-size: 50px;
+  transition: color 0.4s;
 }
-.services .services-item .services-txt {
+.services-item .services-txt {
   display: block;
   font-family: raleway, Arial, sans-serif;
   font-weight: 600;
   font-size: 22px;
   margin-bottom: 20px;
+  transition: color 0.4s;
 }
-.services .services-item .serveces-paragraf {
+.services-item .serveces-paragraf {
   margin-bottom: 25px;
   height: 65px;
   overflow: hidden;
