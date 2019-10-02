@@ -168,6 +168,7 @@ input[type="search"] {
   background-repeat: no-repeat;
   font-family: montserrat, Arial, sans-serif;
   font-size: 14px;
+  color: #ffffff;
 }
 input[type="search"]:hover {
   cursor: pointer;
@@ -176,7 +177,7 @@ input[type="search"]:focus {
   width: 150px;
   background-position: right;
   background-color: #c7b299;
-  transition: width 0.5s ease-out, background-color 0.5s ease-out;
+  transition: width 0.4s ease-out, background-color 0.4s ease-out;
 }
 
 .header-wrap {
@@ -1078,10 +1079,10 @@ input[type="search"]:focus {
 }
 .logos .logos-link:hover {
   transform: scale(1.4);
-  transition: 0.5s;
+  transition: 0.4s;
 }
 .logos .logos-link:not(:hover) {
-  transition: 0.5s;
+  transition: 0.4s;
 }
 
 .footer {
@@ -1219,10 +1220,10 @@ input[type="search"]:focus {
 }
 .footer-widjet .footer-widjet-link:hover .footer-widjet-item {
   transform: scale(1.05);
-  transition: 0.5s;
+  transition: 0.4s;
 }
 .footer-widjet .footer-widjet-link:not(:hover) .footer-widjet-item {
-  transition: 0.5s;
+  transition: 0.4s;
 }
 
 .footer-copyright {

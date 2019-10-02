@@ -25,7 +25,7 @@
     color: #ffffff
     justify-content: space-between
     align-items: center
-    transition: color 0.4s
+    transition: color $transition-time
     &:hover
         color: $color-hover
     &:active
@@ -50,7 +50,7 @@
     a
         color: #ffffff
         text-decoration: none
-        transition: color 0.4s
+        transition: color $transition-time
         &:hover
             color: $color-hover
         &:active
@@ -75,13 +75,14 @@ input[type="search"]
     background-repeat: no-repeat
     font-family: montserrat, Arial, sans-serif
     font-size: 14px
+    color: #ffffff
     &:hover
         cursor: pointer
     &:focus
         width: 150px
         background-position: right
         background-color: $color-hover
-        transition: width 0.5s ease-out, background-color 0.5s ease-out
+        transition: width $transition-time ease-out, background-color $transition-time ease-out
 
 .header-wrap
     display: flex
@@ -142,7 +143,7 @@ input[type="search"]
     border-radius: 50%
     background-color: #cccccc
     border: 2px solid transparent
-    transition: scale 0.4s, background-color 0.4s
+    transition: scale $transition-time, background-color $transition-time
     &:hover
         border: 2px solid #cccccc
         background-color: transparent
@@ -158,7 +159,7 @@ input[type="search"]
     color: #ccc
     top: 40%
     left: -20%
-    transition: color 0.4s
+    transition: color $transition-time
     &:hover
         color: $color-hover
     &:active
@@ -170,7 +171,7 @@ input[type="search"]
     color: #ccc
     top: 40%
     right: -20%
-    transition: color 0.4s
+    transition: color $transition-time
     &:hover
         color: $color-hover
     &:active
@@ -186,7 +187,7 @@ input[type="search"]
     .icon-icon-cart
         font-size: 24px
         color: #ffffff
-        transition: color 0.4s
+        transition: color $transition-time
         &:hover
             color: $color-hover
             cursor: pointer
