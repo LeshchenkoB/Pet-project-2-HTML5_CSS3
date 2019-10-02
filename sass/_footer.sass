@@ -2,128 +2,128 @@
   width: 1920px
   color: #ffffff
 
-  .footer-txt
-    @extend %padding-container
-    padding-top: 80px
+.footer-txt
+  @extend %padding-container
+  padding-top: 80px
+  display: flex
+  justify-content: space-between
+  background-color: #191919
+
+.footer-txt-column
+  width: 270px
+
+  .footer-logo
     display: flex
-    justify-content: space-between
-    background-color: #191919
+    margin: 0 0 30px 0
+    font-family: raleway, Arial, sans-serif
+    font-size: 34px
+    font-weight: 400
+    letter-spacing: -1.36px
+    line-height: 55px
+    text-decoration: none
+    color: #ffffff
+    align-items: center
+    &:hover
+      color: $color-hover
+    &:active
+      color: $color-active
+    .icon-logos
+      display: block
+      width: 60px
+      font-size: 51px
 
-    .footer-txt-column
-      width: 270px
+  .footer-paragraf
+    margin: 0 0 30px 0
+    font-family: montserrat, Arial, sans-serif
+    font-weight: 300
+    font-size: 14px
+    line-height: 1.71
+    color: #555555
 
-      .footer-logo
-        display: flex
-        margin: 0 0 30px 0
-        font-family: raleway, Arial, sans-serif
-        font-size: 34px
-        font-weight: 400
-        letter-spacing: -1.36px
-        line-height: 55px
-        text-decoration: none
-        color: #ffffff
-        align-items: center
-        &:hover
-          color: $color-hover
-        &:active
-          color: $color-active
-        .icon-logos
-          display: block
-          width: 60px
-          font-size: 51px
+  .footer-link
+    display: flex
+    align-items: center
+    font-family: montserrat, Arial, sans-serif
+    font-weight: 400
+    font-size: 14px
+    line-height: 1.43
+    color: #d1d1d1
+    text-decoration: none
+    &:hover
+      color: $color-hover
+    &:active
+      color: $color-active
 
-      .footer-paragraf
-        margin: 0 0 30px 0
-        font-family: montserrat, Arial, sans-serif
-        font-weight: 300
-        font-size: 14px
-        line-height: 1.71
-        color: #555555
+    i
+      font-size: 7px
+      padding: 0 0 0 10px
 
-      .footer-link
-        display: flex
-        align-items: center
-        font-family: montserrat, Arial, sans-serif
-        font-weight: 400
-        font-size: 14px
-        line-height: 1.43
-        color: #d1d1d1
-        text-decoration: none
-        &:hover
-          color: $color-hover
-        &:active
-          color: $color-active
+  .footer-title
+    display: block
+    margin: 0 0 30px 0
+    padding: 20px 0 0 0
+    box-sizing: border-box
+    font-family: raleway, Arial, sans-serif
+    font-weight: 700
+    font-size: 24px
+    color: #ffffff
 
-        i
-          font-size: 7px
-          padding: 0 0 0 10px
+.footer-txt-block-wrap
+  display: flex
+  flex-direction: column
+  justify-content: space-between
 
-      .footer-title
-        display: block
-        margin: 0 0 30px 0
-        padding: 20px 0 0 0
-        box-sizing: border-box
-        font-family: raleway, Arial, sans-serif
-        font-weight: 700
-        font-size: 24px
-        color: #ffffff
-
-      .footer-txt-block-wrap
-        display: flex
-        flex-direction: column
-        justify-content: space-between
-
-        .footer-txt-block
-          margin: 0 0 20px 0
-          border-bottom: 2px solid #555555
-          &:last-child
-            border-bottom: none
-          &:hover .footer-block-date
-            color: #ffffff
-          &:hover .footer-block-paragraf
-            color: #c7b299
-          &:hover .footer-block-timeAgo
-            color: #c7b299
+  .footer-txt-block
+    margin: 0 0 20px 0
+    border-bottom: 2px solid #555555
+    &:last-child
+      border-bottom: none
+    &:hover .footer-block-date
+      color: #ffffff
+    &:hover .footer-block-paragraf
+      color: #c7b299
+    &:hover .footer-block-timeAgo
+      color: #c7b299
 
 
-          .footer-block-date
-            display: block
-            margin: 0 0 10px 0
-            font-family: montserrat, Arial, sans-serif
-            font-weight: 300
-            font-size: 12px
-            line-height: 1.67
-            color: #363636
+    .footer-block-date
+      display: block
+      margin: 0 0 10px 0
+      font-family: montserrat, Arial, sans-serif
+      font-weight: 300
+      font-size: 12px
+      line-height: 1.67
+      color: #363636
 
-          .footer-block-paragraf
-            margin: 0 0 20px 0
-            font-family: montserrat, Arial, sans-serif
-            font-weight: 300
-            font-size: 14px
-            line-height: 1.43
-            color: #555555
+    .footer-block-paragraf
+      margin: 0 0 20px 0
+      font-family: montserrat, Arial, sans-serif
+      font-weight: 300
+      font-size: 14px
+      line-height: 1.43
+      color: #555555
 
-          .footer-block-timeAgo
-            display: block
-            margin: 0 0 20px 0
-            font-family: montserrat, Arial, sans-serif
-            font-weight: 300
-            font-size: 12px
-            color: #363636
+    .footer-block-timeAgo
+      display: block
+      margin: 0 0 20px 0
+      font-family: montserrat, Arial, sans-serif
+      font-weight: 300
+      font-size: 12px
+      color: #363636
 
-      .footer-widjet
-        display: flex
-        justify-content: space-between
-        flex-wrap: wrap
+.footer-widjet
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
 
-        .footer-widjet-link
-          display: block
-          margin: 0 0 5px 0
-          &:hover .footer-widjet-item
-            transform: scale(1.05)
-            transition: 0.5s
-          &:not(:hover) .footer-widjet-item
-            transition: 0.5s
+  .footer-widjet-link
+    display: block
+    margin: 0 0 5px 0
+    &:hover .footer-widjet-item
+      transform: scale(1.05)
+      transition: 0.5s
+    &:not(:hover) .footer-widjet-item
+      transition: 0.5s
 
 .footer-copyright
   @extend %padding-container
@@ -133,33 +133,33 @@
   display: flex
   justify-content: space-between
 
-  .footer-vl
-    padding: 0 10px 0 10px
+.footer-vl
+  padding: 0 10px 0 10px
 
-  .footer-copyright-left
+.footer-copyright-left
+  color: #555555
+  font-family: montserrat, Arial,sans-serif
+  font-weight: 300
+  font-size: 13px
+  line-height: 1.54
+
+  .copyrigth-left-link
     color: #555555
-    font-family: montserrat, Arial,sans-serif
-    font-weight: 300
-    font-size: 13px
-    line-height: 1.54
+    text-decoration: none
+    &:hover
+      color: #959595
 
-    .copyrigth-left-link
-      color: #555555
-      text-decoration: none
-      &:hover
-        color: #959595
+.footer-copyright-right
+  color: #555555
+  font-family: montserrat, Arial,sans-serif
+  font-weight: 300
+  font-size: 13px
+  line-height: 1.54
 
-  .footer-copyright-right
+  .copyrigth-right-link
     color: #555555
-    font-family: montserrat, Arial,sans-serif
-    font-weight: 300
-    font-size: 13px
-    line-height: 1.54
-
-    .copyrigth-right-link
-      color: #555555
-      text-decoration: none
-      &:hover
-        color: #959595
+    text-decoration: none
+    &:hover
+      color: #959595
 
 
