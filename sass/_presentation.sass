@@ -1,56 +1,55 @@
 .presentation
   position: relative
   display: flex
-  margin: 0 0 80px 0
   justify-content: center
   align-items: center
 
-  .presentation-txt-wrap
-    width: 550px
-    position: absolute
-    text-align: center
+.presentation-txt-wrap
+  width: 550px
+  position: absolute
+  text-align: center
+  color: #ffffff
+
+.presentation-play
+  width: 100px
+  height: 100px
+  margin: 0 auto 40px
+  display: flex
+  justify-content: center
+  align-items: center
+  background-color: rgba(0, 0, 0, 0.2)
+  border-radius: 50%
+  transition: background-color 0.4s
+  &:hover
+    background-color: rgba(255, 255, 255, 0.5)
+  &:hover .icon-icon-play
+    color: #000000
+  &:active
+    background-color: rgba(0, 0, 0, 0.2)
+  &:active .icon-icon-play
     color: #ffffff
 
-    .presentation-play
-      width: 100px
-      height: 100px
-      margin: 0 auto 40px
-      display: flex
-      justify-content: center
-      align-items: center
-      background-color: rgba(0, 0, 0, 0.2)
-      border-radius: 50%
-      transition: background-color 0.4s
-      &:hover
-        background-color: rgba(255, 255, 255, 0.5)
-      &:hover .icon-icon-play
-        color: #000000
-      &:active
-        background-color: rgba(0, 0, 0, 0.2)
-      &:active .icon-icon-play
-        color: #ffffff
+  .icon-icon-play
+    font-size: 80px
+    transition: color 0.4s
 
-      .icon-icon-play
-        font-size: 80px
-        transition: color 0.4s
+.presentation-title
+  font-family: raleway, Arial, sans-serif
+  font-weight: 500
+  font-size: 30px
+  display: block
+  margin: 0 0 30px 0
 
-    .presentation-title
-      font-family: raleway, Arial, sans-serif
-      font-weight: 500
-      font-size: 30px
-      display: block
-      margin: 0 0 30px 0
+.presentation-txt
+  margin: 0 0 40px 0
+  font-family: montserrat, Arial, sans-serif
+  font-weight: 300
+  font-size: 16px
+  line-height: 1.75
 
-    .presentation-txt
-      margin: 0 0 40px 0
-      font-family: montserrat, Arial, sans-serif
-      font-weight: 300
-      font-size: 16px
-      line-height: 1.75
-
-    .presentation-time
-      font-family: montserrat, Arial, sans-serif
-      font-weight: 400
-      line-height: 1.71
-      font-size: 14px
-      color: #c7b299
+.presentation-time
+  font-family: montserrat, Arial, sans-serif
+  font-weight: 400
+  line-height: 1.71
+  font-size: 14px
+  color: #c7b299
