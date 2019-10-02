@@ -410,36 +410,40 @@ input[type="search"]:focus {
   line-height: 1.75;
   color: #8c8c8c;
 }
-.ideas .ideas-slides {
+
+.ideas-slides {
   display: flex;
   min-height: 482px;
   justify-content: center;
   position: relative;
 }
-.ideas .ideas-slides .ideas-slides-left {
+.ideas-slides .ideas-slides-left {
   position: absolute;
   z-index: 1;
   top: 82px;
   left: -30px;
+  transition: box-shadow 0.4s;
 }
-.ideas .ideas-slides .ideas-slides-left:hover {
+.ideas-slides .ideas-slides-left:hover {
   z-index: 4;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
-.ideas .ideas-slides .ideas-slides-center {
+.ideas-slides .ideas-slides-center {
   position: absolute;
   z-index: 3;
+  transition: box-shadow 0.4s;
 }
-.ideas .ideas-slides .ideas-slides-center:hover {
+.ideas-slides .ideas-slides-center:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
-.ideas .ideas-slides .ideas-slides-right {
+.ideas-slides .ideas-slides-right {
   position: absolute;
   z-index: 1;
   top: 82px;
   right: -30px;
+  transition: box-shadow 0.4s;
 }
-.ideas .ideas-slides .ideas-slides-right:hover {
+.ideas-slides .ideas-slides-right:hover {
   z-index: 4;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
