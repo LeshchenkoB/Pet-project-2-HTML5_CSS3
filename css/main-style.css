@@ -792,12 +792,13 @@ input[type="search"]:focus {
   display: flex;
   justify-content: center;
 }
-.device .device-wrap {
+
+.device-wrap {
   width: 660px;
   padding: 115px 0 0 30px;
   box-sizing: border-box;
 }
-.device .device-wrap .device-title {
+.device-wrap .device-title {
   display: block;
   margin: 0 0 30px 0;
   font-family: raleway, Arial, sans-serif;
@@ -805,7 +806,7 @@ input[type="search"]:focus {
   font-weight: 600;
   color: #555555;
 }
-.device .device-wrap .device-txt {
+.device-wrap .device-txt {
   margin: 0 0 40px 0;
   font-family: montserrat, Arial, sans-serif;
   font-size: 16px;
@@ -813,7 +814,7 @@ input[type="search"]:focus {
   line-height: 1.75;
   color: #8c8c8c;
 }
-.device .device-wrap .device-list {
+.device-wrap .device-list {
   margin: 0 0 45px 0;
   font-family: montserrat, Arial, sans-serif;
   font-size: 16px;
@@ -822,7 +823,8 @@ input[type="search"]:focus {
   color: #8c8c8c;
   list-style-position: inside;
 }
-.device .device-wrap .device-list .device-item {
+
+.device-item {
   display: flex;
   align-items: center;
   list-style-type: none;
@@ -831,7 +833,7 @@ input[type="search"]:focus {
   box-sizing: border-box;
   position: relative;
 }
-.device .device-wrap .device-list .device-item:before {
+.device-item:before {
   display: inline-block;
   content: " ";
   background-image: url(../img/li.svg);
