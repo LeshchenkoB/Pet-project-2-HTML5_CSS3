@@ -34,23 +34,40 @@
         display: block
         width: 60px
         font-size: 51px
+//==============
 
+//==============
 .header-nav
     display: flex
 
-    .header-nav-list
-        display: flex
-        list-style-type: none
-        font-family: montserrat, $font-family
-        font-size: 14px
-        line-height: 35px
+.manu
+    display: none
+
+#menu
+    display: none
+
+#menu:checked ~ .header-nav-list
+    visibility: visible
+
+#menu:checked .main-header .header-menu
+    margin: 0 0 290px 0
+
+.header-nav-list
+    display: flex
+    list-style-type: none
+    font-family: montserrat, $font-family
+    font-size: 14px
+    line-height: 35px
 
 .header-nav-item
     margin: 0 30px 0 0
+    display: block
+
     a
         color: #ffffff
         text-decoration: none
         transition: color $transition-time
+        display: block
         &:hover
             color: $color-hover
         &:active
@@ -62,6 +79,7 @@
     align-items: center
     color: #ffffff
     font-size: 25px
+    position: relative
 
 input[type="search"]
     height: 30px
@@ -76,13 +94,17 @@ input[type="search"]
     font-family: montserrat, $font-family
     font-size: 14px
     color: #ffffff
+    position: absolute
+    top: 4px
+    left: 50px
     &:hover
         cursor: pointer
     &:focus
-        width: 150px
+        width: 200px
         background-position: right
         background-color: $color-hover
-        transition: width $transition-time ease-out, background-color $transition-time ease-out
+        transition: width $transition-time ease-out, background-color $transition-time ease-out, left 0.4s ease-out
+        left: -120px
 
 .header-wrap
     display: flex
@@ -197,5 +219,65 @@ input[type="search"]
 .header-nav-cart
     position: relative
 
+@media (max-width: 1199.98px)
+    .header-nav-list
+        padding: 0
+        justify-content: center
+
+    .header-nav-item
+        margin: 0 15px 0 0
+
+    .header-nav-cart
+        margin: 0
+
+    input[type="search"]
+        left: 40px
+    input[type="search"]:focus
+        left: -130px
+
+@media (max-width: 991.98px)
+    .main-header
+        .header-menu
+            position: relative
+
+        .header-nav
+            width: 100%
+            position: absolute
+            top: 40px
+    label
+        display: block
+        width: 50px
+        height: 50px
+        border-radius: 3px
+        background-color: #ffffff
+        position: absolute
+        right: 0
+
+    .header-nav-list
+        visibility: hidden
+        width: 100%
+        margin: 0 auto
+        flex-direction: column
+        position: absolute
+        top: 50px
+        z-index: 1
+
+    .header-nav-item
+        margin: 0
+        text-align: center
+        width: 100%
+        background-color: #ffffff
+        outline: 1px solid black
+        border-radius: 3px
+        transition: background-color $transition-time
+        &:hover
+            background-color: #998675
+        a
+            color: #998675
+            &:hover
+                color: #ffffff
+
+    .header-nav-icon
+        display: none
 
 
