@@ -34,9 +34,7 @@
         display: block
         width: 60px
         font-size: 51px
-//==============
 
-//==============
 .header-nav
     display: flex
 
@@ -51,6 +49,19 @@
 
 #menu:checked .main-header .header-menu
     margin: 0 0 290px 0
+
+#menu:checked ~ label > span
+    border-bottom: 3px solid transparent
+
+#menu:checked ~ label > span:after
+    opacity: 1
+    transform: rotate(-45deg) translate(5px, -11px)
+    width: 40px
+
+#menu:checked ~ label > span:before
+    opacity: 1
+    transform: rotate(45deg) translate(7px, 13px)
+    width: 40px
 
 .header-nav-list
     display: flex
@@ -103,7 +114,7 @@ input[type="search"]
         width: 200px
         background-position: right
         background-color: $color-hover
-        transition: width $transition-time ease-out, background-color $transition-time ease-out, left 0.4s ease-out
+        transition: width $transition-time ease-out, background-color $transition-time ease-out, left $transition-time ease-out
         left: -120px
 
 .header-wrap
@@ -251,33 +262,36 @@ input[type="search"]
         border-radius: 3px
         position: absolute
         right: 0
-        flex-direction: column
+        align-items: center
         display: flex
         padding: 10px
         box-sizing: border-box
         span
+            position: relative
             border-bottom: 3px solid #ffffff
             height: 0
             box-sizing: border-box
             display: block
             width: 100%
-            padding: 3px 0 0 0
+            transition: width, $transition-time
             &:after
                 content: ""
                 display: block
                 border-bottom: 3px solid #ffffff
                 box-sizing: border-box
                 width: 100%
-                padding: 4px
+                position: absolute
+                top: 12px
+                transition: width, $transition-time
             &:before
                 content: ""
                 display: block
                 border-bottom: 3px solid #ffffff
                 box-sizing: border-box
                 width: 100%
-                padding: 5px
-
-
+                position: absolute
+                top: -13px
+                transition: width, $transition-time
     .header-nav-list
         visibility: hidden
         width: 100%
