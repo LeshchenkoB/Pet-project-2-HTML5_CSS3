@@ -3,7 +3,7 @@
   padding-top: 80px
 
 .project-txt
-  padding: 0 205px
+  padding: 0 15%
   text-align: center
 
   .project-title
@@ -25,7 +25,7 @@
 .project-nav
   width: 100%
   margin: 0 0 40px 0
-  padding: 0 280px
+  padding: 0 20%
   box-sizing: border-box
   display: flex
   justify-content: space-between
@@ -64,6 +64,7 @@
   .project-card-item
     position: relative
     width: 370px
+    max-width: 33%
     margin: 0 0 30px 0
     &:hover .project-card-img
       filter: brightness(50%)
@@ -153,3 +154,42 @@
 
   .project-button-txt
     +button-txt
+
+@media (max-width: 1199.98px)
+  .project-nav
+    padding: 0 15%
+  .project-card
+    justify-content: space-evenly
+
+    .project-card-item
+      max-width: 50%
+
+@media (max-width: 991.98px)
+  .project-nav
+    padding: 0 10%
+
+  .project-card
+    .project-card-item
+      max-width: 45%
+
+@media (max-width: 767.98px)
+  .project-nav
+    padding: 0 5%
+
+    .project-btn-light
+      .project-btn-light-txt
+        padding: 8px 10px
+
+  .project-card
+    flex-direction: column
+    align-items: center
+    .project-card-item
+      max-width: none
+
+@media (max-width: 575.98px)
+  .project-nav
+    padding: 0
+  //.project-nav
+  //  .project-btn-light
+  //    .project-btn-light-txt
+  //      padding: 8px 10px
