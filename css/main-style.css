@@ -670,6 +670,11 @@ input[type="search"]:focus {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
+@media (max-width: 991.98px) {
+  .ideas {
+    display: none;
+  }
+}
 .promo {
   display: flex;
   justify-content: space-between;
@@ -734,6 +739,11 @@ input[type="search"]:focus {
   transition: color 0.4s;
 }
 
+@media (max-width: 991.98px) {
+  .promo {
+    display: none;
+  }
+}
 .project {
   padding-top: 80px;
 }
