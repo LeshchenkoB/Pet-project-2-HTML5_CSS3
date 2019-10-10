@@ -44,17 +44,17 @@ button {
   }
 }
 @media (max-width: 1199.98px) {
-  .container {
-    width: 100%;
-  }
-
   .main-header, .services, .ideas, .promo, .project, .posts, .logos, .footer-txt, .footer-copyright {
     padding: 0 7% 0 7%;
   }
 }
-@media (max-width: 575.98px) {
-  .container {
-    width: 100%;
+@media (max-width: 767.98px) {
+  .main-header {
+    min-height: 125px;
+  }
+
+  .header-wrap {
+    display: none;
   }
 }
 @font-face {
@@ -111,6 +111,7 @@ button {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/header.jpg") no-repeat center top;
   background-size: cover;
   position: relative;
+  transition: min-height 0.4s;
 }
 .main-header .header-menu {
   display: flex;
@@ -119,6 +120,7 @@ button {
   padding-top: 40px;
   justify-content: space-between;
   align-items: center;
+  transition: margin 0.4s;
 }
 
 .header-logo {
@@ -247,11 +249,14 @@ input[type="search"]:focus {
 .header-wrap {
   display: flex;
   justify-content: center;
-  padding: 0 290px;
+  padding: 0 15%;
   position: relative;
 }
 .header-wrap .header-text-wrap {
   color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .header-text-small {
@@ -275,6 +280,7 @@ input[type="search"]:focus {
 }
 
 .header-text {
+  width: 80%;
   margin: 0 0 50px 0;
   font-family: montserrat, Arial, sans-serif;
   font-weight: 300;
@@ -404,6 +410,15 @@ input[type="search"]:focus {
   position: relative;
 }
 
+@media (max-width: 1599.98px) {
+  .header-slide-left {
+    left: 0;
+  }
+
+  .header-slide-right {
+    right: 0;
+  }
+}
 @media (max-width: 1199.98px) {
   .header-nav-list {
     padding: 0;
@@ -427,6 +442,9 @@ input[type="search"]:focus {
   }
 }
 @media (max-width: 991.98px) {
+  .main-header {
+    min-height: 780px;
+  }
   .main-header .header-menu {
     position: relative;
     margin: 0 0 140px 0;
@@ -508,6 +526,19 @@ input[type="search"]:focus {
   }
 
   .header-nav-icon {
+    display: none;
+  }
+
+  .header-pagination {
+    top: 500px;
+  }
+}
+@media (max-width: 767.98px) {
+  .main-header {
+    min-height: 125px;
+  }
+
+  .header-wrap {
     display: none;
   }
 }

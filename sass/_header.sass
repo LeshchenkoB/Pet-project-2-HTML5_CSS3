@@ -5,6 +5,7 @@
     background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("../img/header.jpg") no-repeat center top
     background-size: cover
     position: relative
+    transition: min-height $transition-time
 
     .header-menu
         display: flex
@@ -13,6 +14,7 @@
         padding-top: 40px
         justify-content: space-between
         align-items: center
+        transition: margin $transition-time
 
 .header-logo
     display: flex
@@ -120,11 +122,14 @@ input[type="search"]
 .header-wrap
     display: flex
     justify-content: center
-    padding: 0 290px
+    padding: 0 15%
     position: relative
 
     .header-text-wrap
         color: #ffffff
+        display: flex
+        flex-direction: column
+        align-items: center
 
 .header-text-small
     display: block
@@ -145,6 +150,7 @@ input[type="search"]
     text-align: center
 
 .header-text
+    width: 80%
     margin: 0 0 50px 0
     font-family: montserrat, $font-family
     font-weight: 300
@@ -230,6 +236,11 @@ input[type="search"]
 .header-nav-cart
     position: relative
 
+@media (max-width: 1599.98px)
+    .header-slide-left
+        left: 0
+    .header-slide-right
+        right: 0
 @media (max-width: 1199.98px)
     .header-nav-list
         padding: 0
@@ -248,6 +259,7 @@ input[type="search"]
 
 @media (max-width: 991.98px)
     .main-header
+        min-height: 780px
         .header-menu
             position: relative
             margin: 0 0 140px 0
@@ -319,4 +331,12 @@ input[type="search"]
     .header-nav-icon
         display: none
 
+    .header-pagination
+        top: 500px
 
+@media (max-width: 767.98px)
+    .main-header
+        min-height: 125px
+
+    .header-wrap
+        display: none
