@@ -45,16 +45,12 @@ button {
 }
 @media (max-width: 1199.98px) {
   .main-header, .services, .ideas, .promo, .project, .posts, .logos, .footer-txt, .footer-copyright {
-    padding: 0 7% 0 7%;
+    padding: 0 4% 0 4%;
   }
 }
-@media (max-width: 767.98px) {
-  .main-header {
-    min-height: 125px;
-  }
-
-  .header-wrap {
-    display: none;
+@media (max-width: 991.98px) {
+  .main-header, .services, .ideas, .promo, .project, .posts, .logos, .footer-txt, .footer-copyright {
+    padding: 0 2% 0 2%;
   }
 }
 @font-face {
@@ -602,6 +598,18 @@ input[type="search"]:focus {
   color: #8c8c8c;
 }
 
+@media (max-width: 767.98px) {
+  .services {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .services-item {
+    margin: 0 0 30px 0;
+  }
+}
 .ideas {
   padding-top: 80px;
 }
