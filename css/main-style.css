@@ -1464,12 +1464,19 @@ input[type="search"]:focus {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/photo-logos.png) no-repeat center top;
   background-size: cover;
 }
+.logos .logos-link {
+  width: 20%;
+}
 .logos .logos-link:hover {
   transform: scale(1.4);
   transition: 0.4s;
 }
 .logos .logos-link:not(:hover) {
   transition: 0.4s;
+}
+.logos .logos-img {
+  width: 100%;
+  height: inherit;
 }
 
 .footer {
