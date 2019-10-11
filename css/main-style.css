@@ -535,7 +535,10 @@ input[type="search"]:focus {
 }
 @media (max-width: 767.98px) {
   .main-header {
+    position: fixed;
+    max-height: 125px;
     min-height: 125px;
+    z-index: 1;
   }
 
   .header-wrap {
