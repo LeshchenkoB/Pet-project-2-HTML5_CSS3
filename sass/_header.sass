@@ -5,6 +5,7 @@
     background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("../img/header.jpg") no-repeat center top
     background-size: cover
     position: relative
+    transition: min-height $transition-time
 
     .header-menu
         display: flex
@@ -13,6 +14,7 @@
         padding-top: 40px
         justify-content: space-between
         align-items: center
+        transition: margin $transition-time
 
 .header-logo
     display: flex
@@ -38,19 +40,47 @@
 .header-nav
     display: flex
 
-    .header-nav-list
-        display: flex
-        list-style-type: none
-        font-family: montserrat, $font-family
-        font-size: 14px
-        line-height: 35px
+.manu
+    display: none
+
+#menu
+    display: none
+
+#menu:checked ~ .header-nav-list
+    visibility: visible
+
+#menu:checked .main-header .header-menu
+    margin: 0 0 290px 0
+
+#menu:checked ~ label > span
+    border-bottom: 3px solid transparent
+
+#menu:checked ~ label > span:after
+    opacity: 1
+    transform: rotate(-45deg) translate(5px, -11px)
+    width: 40px
+
+#menu:checked ~ label > span:before
+    opacity: 1
+    transform: rotate(45deg) translate(7px, 13px)
+    width: 40px
+
+.header-nav-list
+    display: flex
+    list-style-type: none
+    font-family: montserrat, $font-family
+    font-size: 14px
+    line-height: 35px
 
 .header-nav-item
     margin: 0 30px 0 0
+    display: block
+
     a
         color: #ffffff
         text-decoration: none
         transition: color $transition-time
+        display: block
         &:hover
             color: $color-hover
         &:active
@@ -62,6 +92,7 @@
     align-items: center
     color: #ffffff
     font-size: 25px
+    position: relative
 
 input[type="search"]
     height: 30px
@@ -76,22 +107,29 @@ input[type="search"]
     font-family: montserrat, $font-family
     font-size: 14px
     color: #ffffff
+    position: absolute
+    top: 4px
+    left: 50px
     &:hover
         cursor: pointer
     &:focus
-        width: 150px
+        width: 200px
         background-position: right
         background-color: $color-hover
-        transition: width $transition-time ease-out, background-color $transition-time ease-out
+        transition: width $transition-time ease-out, background-color $transition-time ease-out, left $transition-time ease-out
+        left: -120px
 
 .header-wrap
     display: flex
     justify-content: center
-    padding: 0 290px
+    padding: 0 15%
     position: relative
 
     .header-text-wrap
         color: #ffffff
+        display: flex
+        flex-direction: column
+        align-items: center
 
 .header-text-small
     display: block
@@ -112,6 +150,7 @@ input[type="search"]
     text-align: center
 
 .header-text
+    width: 80%
     margin: 0 0 50px 0
     font-family: montserrat, $font-family
     font-weight: 300
@@ -197,5 +236,114 @@ input[type="search"]
 .header-nav-cart
     position: relative
 
+@media (max-width: 1599.98px)
+    .header-slide-left
+        left: 0
+    .header-slide-right
+        right: 0
+@media (max-width: 1199.98px)
+    .main-header
+        .header-menu
+            width: 95%
 
+    .header-nav-list
+        padding: 0
+        justify-content: center
 
+    .header-nav-item
+        margin: 0 15px 0 0
+
+    .header-nav-cart
+        margin: 0
+
+    input[type="search"]
+        left: 40px
+    input[type="search"]:focus
+        left: -130px
+
+@media (max-width: 991.98px)
+    .main-header
+        min-height: 780px
+        .header-menu
+            position: relative
+            margin: 0 0 140px 0
+
+        .header-nav
+            width: 100%
+            position: absolute
+            top: 40px
+    label
+        width: 50px
+        height: 50px
+        border-radius: 3px
+        position: absolute
+        right: 0
+        align-items: center
+        display: flex
+        padding: 10px
+        box-sizing: border-box
+        span
+            position: relative
+            border-bottom: 3px solid #ffffff
+            height: 0
+            box-sizing: border-box
+            display: block
+            width: 100%
+            transition: width, $transition-time
+            &:after
+                content: ""
+                display: block
+                border-bottom: 3px solid #ffffff
+                box-sizing: border-box
+                width: 100%
+                position: absolute
+                top: 12px
+                transition: width, $transition-time
+            &:before
+                content: ""
+                display: block
+                border-bottom: 3px solid #ffffff
+                box-sizing: border-box
+                width: 100%
+                position: absolute
+                top: -13px
+                transition: width, $transition-time
+    .header-nav-list
+        visibility: hidden
+        width: 100%
+        margin: 0 auto
+        flex-direction: column
+        position: absolute
+        top: 50px
+        z-index: 1
+
+    .header-nav-item
+        margin: 0
+        text-align: center
+        width: 100%
+        background-color: #ffffff
+        outline: 1px solid black
+        border-radius: 3px
+        transition: background-color $transition-time
+        &:hover
+            background-color: #998675
+        a
+            color: #998675
+            &:hover
+                color: #ffffff
+
+    .header-nav-icon
+        display: none
+
+    .header-pagination
+        top: 500px
+
+@media (max-width: 767.98px)
+    .main-header
+        position: fixed
+        max-height: 125px
+        min-height: 125px
+        z-index: 1
+
+    .header-wrap
+        display: none

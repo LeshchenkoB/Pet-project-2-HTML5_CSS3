@@ -1,10 +1,11 @@
 .container
-  width: 1920px
+  max-width: 1920px
   margin: 0 auto
 
 %padding-container
-  padding: 0 375px 0 375px
+  padding: 0 17% 0 17%
   box-sizing: border-box
+  transition: padding 0.4s
 
 =button()
   width: 170px
@@ -39,4 +40,24 @@ $color-hover: #c7b299
 $color-active: #fff
 $transition-time: 0.4s
 $font-family: Arial, sans-serif
+
+@media (max-width: 1599.98px)
+  .container
+    width: 100%
+  %padding-container
+    padding: 0 10% 0 10%
+
+@media (max-width: 1199.98px)
+  %padding-container
+    padding: 0 4% 0 4%
+
+@media (max-width: 991.98px)
+  %padding-container
+    padding: 0 2% 0 2%
+
+@media (max-width: 767.98px)
+
+
+@media (max-width: 575.98px)
+
 

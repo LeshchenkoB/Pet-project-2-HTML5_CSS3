@@ -1,5 +1,5 @@
 .footer
-  width: 1920px
+  max-width: 1920px
   color: #ffffff
 
 .footer-txt
@@ -162,4 +162,14 @@
     &:hover
       color: #959595
 
+@media (max-width: 767.98px)
+  .footer-txt
+    display: none
 
+  .footer-copyright
+    flex-wrap: wrap
+    justify-content: center
+    text-align: center
+
+  .footer-copyright-left
+    margin: 0 0 20px 0
